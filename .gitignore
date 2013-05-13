@@ -46,29 +46,5 @@ Thumbs.db
 
 # Project #
 ###########
-/config.inc.php
-/file/md5
-/file/cache/*.php
-/file/cache/htm/
-/file/cache/php/
-/file/cache/subscribe/*.php
-/file/cache/subscribe/subscribe.lock
-/file/cache/tpl/
-/file/cache/htpl/
-/file/cache/tag/
-/file/cache/ban/
-/file/cache/install.lock
-/file/chat/
-/file/upload/
-/file/session/
-/file/auto/
-/file/user/
-/file/script/config.js
-/file/htpl/tpl_c/
-/html/about/
-/html/ads/
-/html/process/
-/file/picture/
-/i.php
-/file/brand/
-/extend/phpexcel/
+/cache/*.php
+
