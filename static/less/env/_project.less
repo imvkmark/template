@@ -6,7 +6,6 @@
 // @linkHover: #ccc;
 .resetProjectFont(@fontFamily, @fontSize, @fontColor) {
 	body {
-		background  : #fff;
 		font-family : @fontFamily;
 		font-size   : @fontSize;
 		color       : @fontColor;
@@ -31,5 +30,13 @@
 		height: @inputTextHeight+@inputTextPadding*3;
 		line-height: @inputTextHeight;
 		padding: @inputTextPadding;
+	}
+}
+.aLink(@className, @LinkColor, @hoverColor) {
+	(~".@{className} a"){
+		color: @linkColor;
+		&:hover{
+			color: @hoverColor;
+		}
 	}
 }
