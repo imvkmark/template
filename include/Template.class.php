@@ -120,10 +120,15 @@ class Template {
 	 * @param string $dir
 	 */
 	public static function show($template = 'index', $dir = '') {
-		$to       = $dir ? DT_CACHE . '/' . $dir . '.' . $template . '.php' : DT_CACHE . '/' . $template . '.php';
+		global $pro;
+		if (!empty($pro)) {
+			$pro = $pro.'/';
+		}
+		
+		$to       = $dir ? DT_CACHE . '/'. $pro . $dir . '.' . $template . '.php' : DT_CACHE . '/' . $pro . $template . '.php';
 		$isfileto = is_file($to);
 		if ($dir) $dir = $dir . '/';
-		$from = DT_ROOT . '/tpl/' . $dir . $template . '.htm';
+		$from = DT_ROOT . '/tpl/' . $pro . $dir . $template . '.htm';
 
 		if (!is_file($from)) {
 			exit("模版文件'{$from}'不存在!");

@@ -8,10 +8,11 @@ define('DT_WIN', true);
 define('IN_IXDCW', true);
 
 // settings
-define('DT_PATH', 'http://127.0.0.1/template/');
+define('DT_PATH', 'http://www.www.cc/template/');
 define('DT_CACHE', DT_ROOT.'/cache');
-define('DT_CSS', DT_PATH.'static/css');
-define('DT_SCRIPT', DT_PATH.'static/script');
+define('DT_CSS', DT_PATH.'static/css/');
+define('DT_SCRIPT', DT_PATH.'static/script/');
+define('DT_LESS', DT_PATH.'static/less/');
 
 include DT_INC . '/global.func.php';
 
