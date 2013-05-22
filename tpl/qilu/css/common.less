@@ -2,3 +2,21 @@
 .resetProjectFont(@fontFamily, @fontSize, @fontColor);
 .resetProjectLink(@linkColor, @hoverColor);
 .commonClassGen();
+.aLink('highlight', #c00, #c00);
+
+// ul use 
+.listSubleft{
+	background: url(@bgListSubLeft) no-repeat 0 0 ;
+	line-height: 32px;
+	padding-right: 10px;
+	li{
+		height: 32px;
+		.ellipsis(0);
+	}
+	.num{
+		display: inline-block;
+		width: 43px;
+		text-align: center;
+		color: #fff;
+	}
+}

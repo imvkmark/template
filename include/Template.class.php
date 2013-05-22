@@ -128,7 +128,7 @@ class Template {
 		$to       = $dir ? DT_CACHE . '/'. $pro . $dir . '.' . $template . '.php' : DT_CACHE . '/' . $pro . $template . '.php';
 		$isfileto = is_file($to);
 		if ($dir) $dir = $dir . '/';
-		$from = DT_ROOT . '/tpl/' . $pro . $dir . $template . '.htm';
+		$from = DT_ROOT . '/tpl/' . $pro . $dir . $template . '.tpl';
 
 		if (!is_file($from)) {
 			exit("模版文件'{$from}'不存在!");

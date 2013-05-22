@@ -44,8 +44,12 @@ class R {
 		}
 	}
 
-	public static function getDesc() {
-		return self::$descs[rand(0, count(self::$descs)-1)];
+	public static function getDesc($length = 0) {
+		$desc = self::$descs[rand(0, count(self::$descs)-1)];
+		if ($length) {
+			$desc = mb_strcut($desc, 0, $length, "UTF-8");
+		}
+		return $desc;
 	}
 
 	public static function getTime($format = 'Y-m-d'){
