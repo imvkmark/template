@@ -11,12 +11,101 @@
 	padding-right: 10px;
 	li{
 		height: 32px;
-		.ellipsis(0);
+		.ellipsis();
 	}
 	.num{
 		display: inline-block;
 		width: 43px;
 		text-align: center;
 		color: #fff;
+	}
+}
+
+.listBigCat{
+	line-height: 25px;
+	font-size: 14px;
+	li{
+		.ellipsis();
+		a{
+			padding:0 10px;
+		}
+	}
+	.iCat{
+		a{
+			color:@hoverColor;
+			&:hover{
+				color:@linkColor;
+			}
+		}
+		padding-right: 10px;
+		border-right: 1px solid #ccc;
+	}
+
+}
+
+.listBlackDot{
+	font-size: 14px;
+	li{
+		padding-left: 10px;
+		background: url(@bgListBlackDot) no-repeat left center ;
+		line-height: 30px;
+		height: 30px;
+		overflow: hidden;
+	}
+	
+}
+.listProductMore{
+	background: url(@bgListProduct) no-repeat 0 0 ;
+	padding-left: 32px;
+	.bigItem{
+		height: 139px;
+		.title{
+			display: block;
+			height: 28px;
+			line-height: 28px;
+			overflow: hidden;
+		}
+		img{
+			border:1px solid #ccc;
+		}
+
+	}
+	.normal{
+		height: 30px;
+		line-height: 30px;
+		overflow: hidden;
+	}
+	.bnormal{
+		height: 35px;
+		line-height: 35px;
+		overflow: hidden;
+	}
+}
+.listBignum{
+	background: url(@bgListBignum) no-repeat 0 -7px ;
+	padding-left:42px;
+	li{
+		height: 73px;
+		.title{
+			line-height: 24px;
+			height: 24px;
+			overflow: hidden;
+			color:@darkBlue;
+			display: block;
+			&:hover{
+				color: @linkColor;
+			}
+		}
+		img{
+			float: right;
+			border: 1px solid #CCCCCC;
+			width: 60px;
+			height: 60px;
+			padding:2px;
+		}
+		.intro{
+			padding-top:5px;
+			color: #CCCCCC;
+		}
 	}
 }

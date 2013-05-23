@@ -1,5 +1,5 @@
 <div class="layout">
-	<div class="focus">
+	<div class="focus clear">
 		<div class="col-focus-left">
 			<div class="iContent">
 				<div class="focusBanner">
@@ -38,6 +38,28 @@
 				<div class="focusNews">
 					<h3><a href="#">{R::getTitle(1)}</a></h3>
 					<p>{R::getDesc(160)}[<a href="#" class="more">查看详细</a>]</p>
+				</div>
+				<div class="focusBigCat" style="margin-top:4px;">
+					<ul class="listBigCat">
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+					</ul>
+				</div>
+				<div class="focusBigCat">
+					<ul class="listBigCat">
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+					</ul>
+				</div>
+				<div class="focusBigCat">
+					<ul class="listBigCat">
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+						<li><span class="iCat"><a href="#">资讯</a></span><a href="#">{R::getTitle(1)}</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>

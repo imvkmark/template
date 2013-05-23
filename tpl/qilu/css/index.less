@@ -34,7 +34,7 @@
 		h3{
 			line-height: 43px;
 			font-family: @fontMinor;
-			.ellipsis(0);
+			.ellipsis();
 			text-align: center;
 			a{
 				color:#CB0200;
@@ -57,4 +57,293 @@
 			}
 		}
 	}
+	.focusBigCat{
+		padding:8px 2px;
+	}
+}
+
+.trade{
+	.iContent{
+		border:1px solid #ccc;
+	}
+	.col-trade-left{
+		float: left;
+		width: 715px;
+		.iContent{
+			padding-bottom: 4px;
+		}
+		.iisp{
+			padding-top: 6px;
+			font-family:@fontMinor;
+			a{
+				display: inline-block;
+				height: 31px;
+				line-height: 27px;
+				width: 62px;
+				
+				text-align: center;
+			}
+			.active{
+				color: #fff;
+				background:#fff url(@bgTradeIsp) no-repeat 0 0;
+				margin: 0 14px;
+			}
+		}
+		.ispInfo{
+			padding:10px;
+		}
+	}
+	.col-isp-left{
+		float: left;
+		width: 270px;
+	}
+	.col-isp-right{
+		float: right;
+		width: 430px;
+		overflow: hidden;
+		.ispAd{
+			padding-top: 5px;
+		}
+	}
+	.ispBottom{
+		font-size: 14px;
+		margin: 0.5em;
+		font-weight: bold;
+		padding-left: 1em;
+	}
+	.col-trade-right{
+		float:right;
+		width:240px;
+		h3{
+			border-bottom: 1px solid #ccc;
+			padding-left: 20px;
+			font-size: 14px;
+			font-weight: bold;
+			font-family: @fontMinor;
+			height: 30px;
+			line-height: 30px;
+		}
+		.iTradeInfo{
+			padding:5px 10px;
+		}
+		.listBlackDot{
+			font-size: 12px;
+			li{
+				height: 25px;
+				line-height: 25px;
+			}
+		}
+	}
+
+}
+.catTitle{
+	margin-top: 8px;
+	background:#fff url(@bgCatTitle) no-repeat 0 0;
+	width: 960px;
+	height: 42px;
+	.tCat{
+		width: 175px;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		font-weight: bold;
+		line-height: 42px;
+		display: inline-block;
+		font-family: @fontMinor;
+	}
+	.tEng{
+		padding-left: 20px;
+		overflow: hidden;
+		height: 42px;
+		line-height: 50px;
+		font-size: 16px;
+		font-weight: bold;
+		color: #FCA65D;
+	}
+	.cats{
+		float: right;
+		height: 42px;
+		line-height: 52px;
+		font-size: 12px;
+		font-weight: normal;
+		padding-right: 10px;
+		a{
+			color:#1579C5;
+			&:hover{
+				color:@linkColor;
+			}
+			padding:0 5px;
+		}
+	}
+}
+
+.hotPhones{
+	margin-top: 8px;
+	.iContent{
+		border: 1px solid #ccc;
+		p{
+			margin: 0;
+			text-align: center;
+			padding:0 12px;
+		}
+	}
+	.hotPhoneItem{
+		padding-top: 1px;
+		padding-bottom: 4px;
+		width: 233px;
+		float: left;
+		_display:inline;
+	}
+	.imgWrapper{
+		padding-left: 44px;
+	}
+	.itemName{
+		display: inline-block;
+		padding: 0px 15px;
+		height: 25px;
+		line-height: 25px;
+		overflow: hidden;
+		color:@darkBlue;
+		&:hover{
+			color: @hoverColor;
+		}
+	}
+	.priceItem{
+		font-weight: bold;
+		color:#970103;
+		font-size: 14px;
+	}
+	.commentResult{
+		img{
+			vertical-align: middle;
+		}
+	}
+	.info{
+		height: 25px;
+		overflow: hidden;
+		span{
+			display: inline-block;
+			height: 25px;
+			line-height: 25px;
+		}
+	}
+	.buy{
+		text-align: center;
+		line-height: 25px;
+		height: 25px;
+		.buyButton{
+			background: url(@bgBuyButton) no-repeat 0 2px;
+			height: 25px;
+			width: 90px;
+			display: inline-block;
+		}
+	}
+	.phoneList{
+		padding:6px 10px;
+	}
+}
+
+.hotphonecase{
+	.iContent{
+		border:1px solid #ccc;
+	}
+	.col-hotcaseinfo{
+		float: left;
+		width: 400px;
+		.focusInfo{
+			padding:10px;
+		}
+		.infoTitle{
+			line-height: 43px;
+			font-family: '微软雅黑', 'Arial', '宋体';
+			white-space: nowrap;
+			-o-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			text-align: center;
+			a{
+				color: #CB0200;
+				&:hover{
+					color:@hoverColor;
+				}
+			}
+		}
+		p{
+			line-height: 22px;
+			margin: 0;
+			padding-bottom: 10px;
+			text-indent: 2em;
+			border-bottom: 1px dashed #ccc;
+			.more{
+				color:@hoverColor;
+				&:hover{
+					color:@linkColor;
+				}
+			}
+		}
+		.hotcaselist{
+			padding:5px 10px 10px;
+		}
+	}
+	.col-hotcasecompare{
+		float: left;
+		width: 300px;
+		margin-left: 10px;
+		.iContent{
+			border:none;
+			padding-top: 20px;
+		}
+		.titleWrapper{
+			float: left;
+			width: 175px;
+		}
+	}
+	.col-main-right{
+		.caseTab{
+			height: 23px;
+			border-bottom: 1px solid #ccc;
+			background: #f2f0f1;
+			a{
+				display: inline-block;
+				width: 119px;
+				height: 28px;
+				line-height: 23px;
+				float: left;
+				text-align: center;
+			}
+			.active{
+				position: relative;
+				color:#fff;
+				background: url(@bgMenuNarrow) no-repeat center 0;	
+			}
+		}
+		.caseSuggest{
+
+		}
+		.suggestItem{
+			width: 104px;
+			padding-left: 15px;
+			float: left;
+			padding-top: 10px;
+			padding-bottom: 9px;
+			.imgWrapper{
+				padding-left:17px;
+			}
+			img{
+				width: 65px;
+				height: 65px;
+			}
+		}
+		.suggestTitle{
+			display: block;
+			text-align: center;
+		}
+		.suggestPrice{
+			display: block;
+			color: @darkRed;
+			text-align: center;
+			font-weight: bold;
+		}
+
+	}
+
 }
