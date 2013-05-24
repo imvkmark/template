@@ -55,4 +55,12 @@ class R {
 	public static function getTime($format = 'Y-m-d'){
 		return date($format, time()-rand(1, 500000));
 	}
+
+	public static function appImg($num=''){
+		if (!$num) {
+			return DT_PROJECT . 'images/app/'.rand(1, 30).'.jpg';
+		} else {
+			return DT_PROJECT . 'images/app/'.$num.'.jpg';
+		}
+	}
 }
