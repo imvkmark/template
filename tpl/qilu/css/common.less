@@ -3,7 +3,36 @@
 .resetProjectLink(@linkColor, @hoverColor);
 .commonClassGen();
 .aLink('highlight', #c00, #c00);
+body{
+	background:#fff url(@bgBody) repeat-x 0 0;
+	.minHeight(1000);
+}
+.col-list-left{
+	width: 690px;
+	float: left;
+}
+.col-list-right{
+	float: right;
+	width: 260px;
+}
 
+.col-main-left{
+	float: left;
+	width: 715px;
+}
+.col-main-right{
+	float:right;
+	width:240px;
+	h3{
+		border-bottom: 1px solid #ccc;
+		padding-left: 20px;
+		font-size: 14px;
+		font-weight: bold;
+		font-family: @fontMinor;
+		height: 30px;
+		line-height: 30px;
+	}
+}
 // ul use 
 .listSubleft{
 	background: url(@bgListSubLeft) no-repeat 0 0 ;
@@ -51,6 +80,23 @@
 		line-height: 30px;
 		height: 30px;
 		overflow: hidden;
+	}
+	
+}
+.listBlueDot{
+	font-size: 14px;
+	li{
+		padding-left: 10px;
+		background: url(@bgListBlueDot) no-repeat left center ;
+		line-height: 30px;
+		height: 30px;
+		overflow: hidden;
+		a{
+			color: @lightBlue;
+			&:hover{
+				color: @linkColor;
+			}
+		}
 	}
 	
 }
@@ -109,6 +155,21 @@
 		}
 	}
 }
+.listNum{
+	background: url(@bgListNum) no-repeat 0 3px;
+	padding-left:32px;
+	li{
+		height: 32px;
+		line-height: 32px;
+		overflow: hidden;
+		a{
+			color: @lightBlue;
+			&:hover{
+				color:@linkColor;
+			}
+		}
+	}
+}
 
 .listAppDown{
 	background: url(@bgListApp) no-repeat 0 0px ;
@@ -142,44 +203,287 @@
 	}
 }
 
-.friendLink{
-	margin-top: 8px;
-	border: 1px solid #ccc;
-	.linkTitle{
-		height: 32px;
-		a{
-			display: inline-block;
-			padding:0 20px;
-			height: 32px;
-			line-height: 32px;
-			border-right: 1px solid #ccc;
-			font-weight: normal;
-			font-family: @fontMinor;
-			position: relative;
 
-		}
-		.active{
-			border-bottom: 1px solid #fff;
-		}
-		border-bottom: 1px solid #ccc;
-	}
-	.linkContents{
-		padding:10px 19px;
-		li{
-			a{
-				color: #656565;
-				&:hover{
-					color: @hoverColor;
-				}
-			}
-			width: 102px;
-			overflow: hidden;
-			float: left;
-			line-height: 23px;
-			height: 23px;
+//  title
+.title-common{
+	height: 29px;
+	line-height: 29px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding-left: 15px;
+	color:@lightBlue;
+	a{
+		color:@lightBlue;
+		&:hover{
+			color: @linkColor;
 		}
 	}
 }
-.sdinfoBottom{
+.position{
+	line-height: 30px;
+	height: 30px;
+	color: #333;
+	a{
+		color: #333;
+		&:hover{
+			color: @hoverColor;
+		}
+	}
+	.cutter{
+		padding:0 8px;
+	}
+}
+
+.titleComponet{
+	height: 29px;
+	padding-left: 10px;
+	background: url(@bgTitleComponet) no-repeat 0 0;
+	span{
+		background: url(@bgTitleComponetRight) no-repeat right 0;
+		display: inline-block;
+		height: 28px;
+		line-height: 28px;
+		color: #fff;
+		font-family: @fontMinor;
+		padding-right: 10px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+}
+
+.selection{
+	border-top: 1px solid #BDD8ED;
+	border-left: 1px solid #BDD8ED;
+	line-height: 27px;
+	dl{
+		border:1px solid #BDD8ED;
+		border-top:0;
+		border-left: 0;
+		background: #F4F9FD;
+		margin: 0;
+	}
+	dt{
+		width: 75px;
+		float: left;
+		text-align: center;
+		line-height: 35px;
+	}
+	dd{
+		background: #fff;
+		margin-left: 75px;
+		padding: 7px;
+		padding-left: 50px;
+		position: relative;
+		a{
+			padding:0 5px;
+			color: @lightBlue;
+			display: inline-block;
+			white-space: nowrap;
+			line-height: 27px;
+			span{
+				color: #333;
+			}
+		}
+		.iAll{
+			position: absolute;
+			width: 45px;
+			text-align: center;
+			top: 0;
+			left: 0;
+			line-height: 20px;
+			padding-top: 10px;
+		}
+		.active{
+			background: #ff801f;
+			display: inline-block;
+			height: 22px;
+			line-height: 22px;
+			color:#fff;
+			&:hover{
+				color:#ccc;
+			}
+			span{
+				color: #fff;
+			}
+		}
+	}
+	.iCustomPrice{
+		display: inline-block;
+	}
+	.customPrice,
+	.customPriceActive{
+		background: url(@bgCustomPrice) no-repeat 0 0;
+		width: 84px;
+		height: 20px;
+		display: inline-block;
+		padding:0;
+		margin:0 5px;
+		position: relative;
+		top: 5px;
+	}
+	.customPriceActive{
+		background-position: 0 -20px;
+	}
+	
+}
+
+.searchList{
 	margin-top: 8px;
+	.iContent{
+		border:1px solid #ccc;
+	}
+
+	.iOrderAPage{
+		padding:10px;
+	}
+	.iOrder{
+		width: 435px;
+		float: left;
+		line-height: 24px;
+		height: 24px;
+		a{
+			background: url(@bgPage) no-repeat -40px -36px;
+			width: 91px;
+			height: 24px;
+			text-align: center;
+			display: inline-block;
+		}
+		.active{
+			background-position: -40px -6px;
+			color: #fff;
+		}
+	}
+	.iShorPage{
+		float: right;
+		line-height: 24px;
+		height: 24px;
+		text-align: right;
+	}
+	.iItem{
+		width:205px;
+		float: left;
+		padding-left: 20px;
+		.img{
+			display: block;
+			padding-left: 10px;
+			img{
+				width: 185px;
+			}
+		}
+		.title{
+			display: block;
+			color: @lightBlue;
+			&:hover{
+				color:@hoverColor;
+			}
+			line-height: 30px;
+			height: 30px;
+			overflow: hidden;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		.price{
+			display: block;
+			color:@darkRed;
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.desc{
+			margin:4px 0;
+			height: 44px;
+			line-height: 22px;
+			overflow: hidden;
+			color: #999;
+		}
+		.comment{
+			height: 22px;
+			line-height: 22px;
+			overflow: hidden;
+			text-align: center;
+			display: block;
+			color: @lightBlue;
+			&:hover{
+				color:@hoverColor;
+			}
+		}
+		.others{
+			text-align: center;
+			a{
+				background: url(@bgPage) no-repeat -174px -6px;
+				width: 34px;
+				height: 23px;
+				line-height: 23px;
+				text-align: center;
+				font-size: 12px;
+				display: inline-block;
+				margin-right: 5px;
+			}
+			.compare{
+				color: #f00;
+				&:hover{
+					color:@linkColor;
+				}
+			}
+			
+		}
+	}
+	.listPages{
+		text-align: center;
+	}
+	.newPhone{
+		padding: 3px 5px;
+	}
+	.adSide{
+		margin-top: 8px;
+	}
+	.userCommentWrapper{
+		margin-top: 8px;
+	}
+	.userComments{
+		padding: 3px 10px;
+	}
+}
+.page{
+	padding: 10px 0;
+	a{
+		border: 1px solid #FFB35D;
+		background: #FFF6DD;
+		display: inline-block;
+		height: 20px;
+		line-height: 22px;
+		padding:0 5px;
+		&:hover{
+			border:1px solid #ccc;
+		}
+
+	}
+	.prev, .next, .prevDisabled,.nextDisabled{
+		border:1px solid #fff;
+		background-image: url(@bgPage);
+		display: inline-block;
+		width: 60px;
+		height: 24px;
+		line-height: 24px;
+		span{
+			visibility: hidden;
+		}
+	}
+	.current{
+		border: 1px solid @lightBlue;
+		background: #fff;
+	}
+	.prev{
+		background-position: -110px -71px; 
+	}
+	.next{
+		background-position: -110px -101px; 
+	}
+	.prevDisabled{
+		background-position: -40px -71px; 
+	}
+	.nextDisabled{
+		background-position: -40px -101px; 
+	}
 }

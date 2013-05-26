@@ -57,10 +57,22 @@ class R {
 	}
 
 	public static function appImg($num=''){
+		$path = DT_PROJECT_PATH . '/images/app/';
+		$url  = DT_PROJECT . 'images/app/';
 		if (!$num) {
-			return DT_PROJECT . 'images/app/'.rand(1, 30).'.jpg';
+			return $url . rand(1, File::count($path)).'.jpg';
 		} else {
-			return DT_PROJECT . 'images/app/'.$num.'.jpg';
+			return $url . $num.'.jpg';
+		}
+	}
+
+	public static function phoneImg($num='') {
+		$path = DT_PROJECT_PATH . '/images/phone/';
+		$url  = DT_PROJECT . 'images/phone/';
+		if (!$num) {
+			return $url.rand(1, File::count($path)).'.jpg';
+		} else {
+			return $url.$num.'.jpg';
 		}
 	}
 }

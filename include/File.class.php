@@ -286,4 +286,8 @@ class File {
 			return is_writeable($file);
 		}
 	}
+
+	public static function count($dir = '')	{
+		return sizeof(scandir($dir)) - 2;
+	}
 }

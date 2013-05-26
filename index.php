@@ -12,6 +12,7 @@ if(strpos($file, ':')) {
 }
 include DT_ROOT. '/tpl/'.$pro.'/config.inc.php';
 define('DT_PROJECT', DT_PATH.'tpl/'.$pro.'/');
+define('DT_PROJECT_PATH', DT_ROOT.'/tpl/'.$pro.'/');
 if ($dir) {
 	Template::show($file, $dir);
 } else {
