@@ -75,4 +75,14 @@ class R {
 			return $url.$num.'.jpg';
 		}
 	}
+
+	public static function logoImg($num='') {
+		$path = DT_PROJECT_PATH . '/images/logo/';
+		$url  = DT_PROJECT . 'images/logo/';
+		if (!$num) {
+			return $url.rand(1, File::count($path)).'.jpg';
+		} else {
+			return $url.$num.'.jpg';
+		}
+	}
 }

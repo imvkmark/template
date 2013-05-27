@@ -33,6 +33,14 @@ body{
 		line-height: 30px;
 	}
 }
+.col-product-left{
+	float: left;
+	width: 760px;
+}
+.col-product-right{
+	float: right;
+	width: 190px;
+}
 // ul use 
 .listSubleft{
 	background: url(@bgListSubLeft) no-repeat 0 0 ;
@@ -170,7 +178,22 @@ body{
 		}
 	}
 }
-
+.listRoundNum{
+	background: url(@bgListRoundNum) no-repeat 0 0px;
+	li{
+		height: 31px;
+		line-height: 31px;
+		overflow: hidden;
+		padding-left:32px;
+		border-bottom: dashed #ccc 1px;
+		a{
+			color: @darkBlue;
+			&:hover{
+				color:@linkColor;
+			}
+		}
+	}
+}
 .listAppDown{
 	background: url(@bgListApp) no-repeat 0 0px ;
 	padding-left:32px;
@@ -468,6 +491,9 @@ body{
 		line-height: 24px;
 		span{
 			visibility: hidden;
+		}
+		&:hover{
+			border:1px solid #fff;
 		}
 	}
 	.current{
