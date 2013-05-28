@@ -48,6 +48,9 @@
 	<div class="col-product-right">
 		{template 'side-intro', 'product'}
 		{template 'side-hot', 'product'}
+		{template 'side-suggest', 'product'}
+		{template 'side-ad', 'product'}
+		{template 'side-hot', 'product'}
 		{template 'side-viewother', 'product'}
 	</div>
 </div>
