@@ -315,3 +315,96 @@
 		}
 	}
 }
+
+.productParams{
+	margin-top: 8px;
+	.paramsImportant{
+		position: relative;
+		.title{
+			position: relative;
+			z-index:10;
+			li{
+				float: left;
+				margin-right: 8px;
+				a{
+					display: inline-block;
+					height: 40px;
+					line-height: 40px;
+					font-size: 16px;
+					font-weight: bold;
+					font-family: @fontMinor;
+					padding: 0 15px;
+					border:1px solid #B0CAE3;
+					background: #E6EFF8;
+					color: #0669C6;
+				}
+
+			}
+			.active{
+				a{
+					background: #fff;
+					border-bottom: 1px solid #fff;
+					color: #353336;
+				}
+			}
+
+		}
+		.content{
+			z-index:8;
+			border:1px solid #B0CAE3;
+			position: relative;
+			top:-1px;
+			padding: 15px;
+			.paramPart{
+				line-height: 22px;
+				li{
+					font-size: 14px;
+					width: 350px;
+					float: left;
+				}
+			}
+		}
+	}
+	.paramsTitle{
+		margin-top: 10px;
+		background: #E6EFF8;
+		color: #333;
+		font-size: 16px;
+		font-weight: bold;
+		height: 40px;
+		line-height: 40px;
+		padding-left: 20px;
+		font-family: @fontMinor;
+	}
+	.allParams{
+		margin-top: 10px;
+		border:1px solid #B0CAE3;
+		border-bottom: 0;
+		font-size: 14px;
+		.paramItem{
+			background: #E6EFF8;
+			border-bottom: 1px solid #B0CAE3;
+			margin: 0;
+		}
+		dt,dd{
+			padding: 10px;
+		}
+		dt{
+			font-weight: bold;
+			font-size: 16px;
+			width: 130px;
+			float: left;
+			font-family: @fontMinor;
+		}
+		dd{
+			line-height: 22px;
+			border-left: 1px solid #B0CAE3;
+			margin-left: 152px;
+			background: #fff;
+			padding-left: 18px;
+		}
+	}
+	.listPages{
+		text-align: center;
+	}
+}
