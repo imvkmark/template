@@ -180,6 +180,54 @@
 	.productSideAd{
 		padding-top: 8px;
 	}
+	.commonOBox{
+		border:1px solid #EF6D15;
+		.title{
+			background: #EF6D15;
+			color: #fff;
+			height: 35px;
+			padding-left: 15px;
+			line-height: 35px;
+		}
+	}
+	.commonTips{
+		color: #999;
+		padding: 1em;
+	}
+	.commonBBox{
+		border:1px solid #B2D5F1;
+		.title{
+			font-size: 14px;
+			background: #f5f5f5;
+			border-bottom: 1px solid #ccc;
+			color: #333;
+			height: 30px;
+			padding-left: 15px;
+			line-height: 30px;
+		}
+		dl{
+			padding-left: 15px;
+			dt{
+				color: #999;
+				float: left;
+				width: 60px;
+			}
+			dd{
+				margin-left: 60px;
+				a{
+					color: @darkBlue;
+					&:hover{
+						color: @hoverColor;
+					}
+					padding-right: 5px;
+					span{
+						color: #999;
+					}
+				}
+				
+			}
+		}
+	}
 }
 .productPrices{
 	margin-top: 8px;
@@ -407,4 +455,9 @@
 	.listPages{
 		text-align: center;
 	}
+}
+
+
+.productPiclist{
+	margin-top: 8px;
 }
