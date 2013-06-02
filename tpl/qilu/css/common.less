@@ -1,3 +1,4 @@
+.__reset{}
 .resetBrowser();
 .resetProjectFont(@fontFamily, @fontSize, @fontColor);
 .resetProjectLink(@linkColor, @hoverColor);
@@ -7,6 +8,7 @@ body{
 	background:#fff url(@bgBody) repeat-x 0 0;
 	.minHeight(1000);
 }
+.__col{}
 .col-list-left{
 	width: 690px;
 	float: left;
@@ -41,6 +43,7 @@ body{
 	float: right;
 	width: 190px;
 }
+.__list{}
 // ul use 
 .listSubleft{
 	background: url(@bgListSubLeft) no-repeat 0 0 ;
@@ -226,7 +229,7 @@ body{
 	}
 }
 
-
+.__title{}
 //  title
 .title-common{
 	height: 29px;
@@ -241,20 +244,6 @@ body{
 		&:hover{
 			color: @linkColor;
 		}
-	}
-}
-.position{
-	line-height: 30px;
-	height: 30px;
-	color: #333;
-	a{
-		color: #333;
-		&:hover{
-			color: @hoverColor;
-		}
-	}
-	.cutter{
-		padding:0 8px;
 	}
 }
 
@@ -274,6 +263,22 @@ body{
 		font-weight: bold;
 	}
 }
+.__position{}
+.position{
+	line-height: 30px;
+	height: 30px;
+	color: #333;
+	a{
+		color: #333;
+		&:hover{
+			color: @hoverColor;
+		}
+	}
+	.cutter{
+		padding:0 8px;
+	}
+}
+.__selection{}
 
 .selection{
 	border-top: 1px solid #BDD8ED;
@@ -350,7 +355,7 @@ body{
 	}
 	
 }
-
+.__search{}
 .searchList{
 	margin-top: 8px;
 	.iContent{
@@ -468,6 +473,8 @@ body{
 		padding: 3px 10px;
 	}
 }
+
+.__page{}
 .page{
 	padding: 10px 0;
 	a{

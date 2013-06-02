@@ -8,6 +8,6 @@
 
 {template 'position', 'common'}
 
-{template 'andriod', 'component'}
+{template 'andriod', 'product'}
 
 {template 'footer', 'common'}

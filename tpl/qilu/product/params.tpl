@@ -140,7 +140,7 @@
 			</dl>
 		</div>
 		
-		{template 'page', 'component'}
+		{template 'page', 'product'}
 	</div>
 	<div class="col-product-right">
 		{template 'side-intro', 'product'}

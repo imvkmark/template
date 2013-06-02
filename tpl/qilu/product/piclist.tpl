@@ -27,10 +27,7 @@
 			价格仅供参考, 购买时以当地实际销售产品为主
 		</div>
 		<div class="productSaler">
-
-
-			{template 'page', 'component'}
-			
+			{template 'page', 'product'}
 		</div>
 	</div>
 	<div class="col-product-right">
