@@ -26,9 +26,30 @@
 		<div class="commonTips">
 			价格仅供参考, 购买时以当地实际销售产品为主
 		</div>
-		<div class="productSaler">
-			{template 'page', 'product'}
+		<div class="commonOBox">
+			<h3 class="title">三星GS 3 </h3>
+			<div class="items clear">
+				<p class="desc">共<strong>X</strong>张图片</p>
+				<a href="">
+					<img src="{R::picImg()}" alt="">
+					<span>{R::getTitle(1)}</span>
+				</a>
+				<a href="">
+					<img src="{R::picImg()}" alt="">
+					<span>{R::getTitle(1)}</span>
+				</a>
+				<a href="">
+					<img src="{R::picImg()}" alt="">
+					<span>{R::getTitle(1)}</span>
+				</a>
+				<a href="">
+					<img src="{R::picImg()}" alt="">
+					<span>{R::getTitle(1)}</span>
+				</a>
+			</div>
+			<p class="more"><a href="">查看更多</a></p>
 		</div>
+		{template 'page', 'common'}
 	</div>
 	<div class="col-product-right">
 		{template 'side-intro', 'product'}

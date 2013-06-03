@@ -85,4 +85,13 @@ class R {
 			return $url.$num.'.jpg';
 		}
 	}
+	public static function picImg($num='') {
+		$path = DT_PROJECT_PATH . '/images/pic/';
+		$url  = DT_PROJECT . 'images/pic/';
+		if (!$num) {
+			return $url.rand(1, File::count($path)).'.jpg';
+		} else {
+			return $url.$num.'.jpg';
+		}
+	}
 }
