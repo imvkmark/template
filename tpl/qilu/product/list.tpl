@@ -1,5 +1,5 @@
 <div class="layout">
-	<div class="titleComponet">
+	<div class="titleTab">
 		<span>安卓手机大全</span>
 	</div>
 </div>
@@ -233,7 +233,7 @@
 		</div>
 		<div class="col-list-right">
 			<div class="iContent">
-				<h3 class="title-common">
+				<h3 class="titleGrey">
 					最新安卓手机
 				</h3>
 				<div class="newPhone">
@@ -255,7 +255,7 @@
 				<img src="{DT_PROJECT}images/imgSideA.jpg" alt="">
 			</div>
 			<div class="iContent userCommentWrapper">
-				<h3 class="title-common">
+				<h3 class="titleGrey">
 					网友交流热帖
 				</h3>
 				<div class="userComments">

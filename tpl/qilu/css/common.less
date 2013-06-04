@@ -1,4 +1,3 @@
-.__reset{}
 .resetBrowser();
 .resetProjectFont(@fontFamily, @fontSize, @fontColor);
 .resetProjectLink(@linkColor, @hoverColor);
@@ -8,7 +7,7 @@ body{
 	background:#fff url(@bgBody) repeat-x 0 0;
 	.minHeight(1000);
 }
-.__col{}
+
 .col-list-left{
 	width: 690px;
 	float: left;
@@ -43,7 +42,7 @@ body{
 	float: right;
 	width: 190px;
 }
-.__list{}
+
 // ul use 
 .listSubleft{
 	background: url(@bgListSubLeft) no-repeat 0 0 ;
@@ -188,7 +187,7 @@ body{
 		line-height: 31px;
 		overflow: hidden;
 		padding-left:32px;
-		border-bottom: dashed #ccc 1px;
+		border-bottom: 1px dashed #ccc;
 		a{
 			color: @darkBlue;
 			&:hover{
@@ -229,9 +228,8 @@ body{
 	}
 }
 
-.__title{}
 //  title
-.title-common{
+.titleGrey{
 	height: 29px;
 	line-height: 29px;
 	font-size: 14px;
@@ -246,13 +244,20 @@ body{
 		}
 	}
 }
-
-.titleComponet{
+.titleOrange{
+	line-height: 32px;
+	height: 32px;
+	background: #EE721C;
+	color: #fff;
+	padding-left: 2em;
+	margin-top: 8px;
+}
+.titleTab{
 	height: 29px;
 	padding-left: 10px;
-	background: url(@bgTitleComponet) no-repeat 0 0;
+	background: url(@bgtitleTab) no-repeat 0 0;
 	span{
-		background: url(@bgTitleComponetRight) no-repeat right 0;
+		background: url(@bgtitleTabRight) no-repeat right 0;
 		display: inline-block;
 		height: 28px;
 		line-height: 28px;
@@ -263,7 +268,16 @@ body{
 		font-weight: bold;
 	}
 }
-.__position{}
+.wrapGrey{
+	border:1px solid #ccc;
+	border-top: none;
+	padding:3px 5px;
+}
+.wrapOrange{
+	border: 1px solid #EE721C;
+	border-top: none;
+	padding:3px 5px;
+}
 .position{
 	line-height: 30px;
 	height: 30px;
@@ -278,7 +292,7 @@ body{
 		padding:0 8px;
 	}
 }
-.__selection{}
+
 
 .selection{
 	border-top: 1px solid #BDD8ED;
@@ -355,7 +369,7 @@ body{
 	}
 	
 }
-.__search{}
+
 .searchList{
 	margin-top: 8px;
 	.iContent{
@@ -474,7 +488,6 @@ body{
 	}
 }
 
-.__page{}
 .page{
 	padding: 10px 0;
 	a{
@@ -519,4 +532,180 @@ body{
 	.nextDisabled{
 		background-position: -40px -101px; 
 	}
+}
+
+.header{
+	.top{
+		.singleLine(27);
+		a{padding:0 10px;}
+		overflow: hidden;
+	}
+	.qilu{
+		height: 68px;
+		.logo{
+			width: 145px;
+			float: left;
+		}
+		.menu{
+			width: 800px;
+			float: right;
+			.iContent{
+				float: left;
+				position: relative;
+				padding-left:10px;
+				padding-right: 5px;
+				a{
+					padding-right: 10px;
+				}
+				.iLine{
+					display: inline-block;
+					height: 35px;
+					border-left:1px solid #ccc;
+					width: 1px;
+					position: absolute;
+					top: 16px;
+					right:0;
+				}
+			}
+			i{
+				color:#c00;
+				font-style: normal;
+				&:hover{
+					color:#f00;
+				}
+			}
+		}
+	}
+
+	.sdinfo{
+		height: 76px;
+		.logo{
+			float: left;
+			width: 188px;
+		}
+		.search{
+			float: left;
+			width: 500px;
+			height: 75px;
+			background: url(@bgSearch) no-repeat 0 0 ;
+			position: relative;
+			ul{
+				height: 37px;
+				line-height: 37px;
+				position: absolute;
+				top:20px;
+			}
+			 li {
+			 	font-size: 16px;
+			 	float: left;
+			 }
+			 .sel{
+			 	width: 38px;
+				padding-left: 10px;
+				padding-right: 32px;
+				text-align: center;
+			 }
+			 .searchInput{
+			 	border:none;
+			 	height: 20px;
+				padding: 5px;
+				width: 344px;
+			 }
+			 .searchButton{
+				text-align: center;
+				width: 66px;
+				display: inline-block;
+				color: #fff;
+				&:hover{
+					color:#000;
+				}
+
+			 }
+		}
+		.hot{
+			 width: 178px;
+			float: left;
+			line-height: 75px;
+			height: 75px;
+			padding: 0 8px;
+			strong{
+				color:#00f;
+				font-weight: normal;
+			}
+		}
+		.fav{
+			width: 50px;
+			float: left;
+			padding-top: 18px;
+			line-height: 20px;
+			a{
+				display: inline-block;
+			}
+		}
+	}
+}
+.nav{
+	height: 35px;
+	font-size: 14px;
+	font-family: '微软雅黑', Arial, '宋体';
+	li{
+		float: left;
+		height:35px;
+		line-height: 35px;
+	}
+	a{
+		color:#fff;
+		display: inline-block;
+		padding:0 15px;
+		&:hover{
+			color:#000;
+		}
+	}
+	.line{
+		background: url(@bgMenu) no-repeat 0 0 ;
+		width: 9px;
+	}
+}
+
+
+.friendLink{
+	margin-top: 8px;
+	border: 1px solid #ccc;
+	.linkTitle{
+		height: 32px;
+		a{
+			display: inline-block;
+			padding:0 20px;
+			height: 32px;
+			line-height: 32px;
+			border-right: 1px solid #ccc;
+			font-weight: normal;
+			font-family: @fontMinor;
+			position: relative;
+
+		}
+		.active{
+			border-bottom: 1px solid #fff;
+		}
+		border-bottom: 1px solid #ccc;
+	}
+	.linkContents{
+		padding:10px 19px;
+		li{
+			a{
+				color: #656565;
+				&:hover{
+					color: @hoverColor;
+				}
+			}
+			width: 102px;
+			overflow: hidden;
+			float: left;
+			line-height: 23px;
+			height: 23px;
+		}
+	}
+}
+.sdinfoBottom{
+	margin-top: 8px;
 }

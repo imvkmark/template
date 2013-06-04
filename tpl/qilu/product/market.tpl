@@ -1,10 +1,29 @@
-<div class="layout">
-	<div class="titleTab">
-		<span>配件导购</span>
-	</div>
-</div>
-<div class="layout article articleReview clear">
+<div class="layout productCommon productMarket clear">
 	<div class="col-list-left">
+		<div class="commonBBox">
+			<h3 class="title">图片分类</h3>
+			<div>
+				<dl class="clear">
+					<dt>图片分类:</dt>
+					<dd>
+						<a href="#">整体分类<span>(123)</span></a>
+						<a href="#">整体分类<span>(123)</span></a>
+						<a href="#">整体分类<span>(123)</span></a>
+						<a href="#">整体分类<span>(123)</span></a>
+					</dd>
+				</dl>
+				<dl class="clear">
+					<dt>图片分类:</dt>
+					<dd>
+						<a href="#">整体分类<span>(123)</span></a>
+						<a href="#">整体分类<span>(123)</span></a>
+						<a href="#">整体分类<span>(123)</span></a>
+						<a href="#">整体分类<span>(123)</span></a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<h3 class="title">行情</h3>
 		<div class="items">
 			<div class="item clear">
 				<div class="img">
@@ -86,8 +105,9 @@
 					</p>
 				</div>
 			</div>
+			{template 'page', 'common'}
 		</div>
-		{template 'page', 'common'}
+
 	</div>
 	<div class="col-list-right">
 		<div class="adSide">
