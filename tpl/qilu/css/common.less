@@ -7,7 +7,10 @@ body{
 	background:#fff url(@bgBody) repeat-x 0 0;
 	.minHeight(1000);
 }
-
+.layout{
+	width:960px;
+	margin:0 auto;
+}
 .col-list-left{
 	width: 690px;
 	float: left;
@@ -91,8 +94,23 @@ body{
 		height: 30px;
 		overflow: hidden;
 	}
-	
 }
+
+.listGreyDot{
+	font-size: 14px;
+	li{
+		padding-left: 10px;
+		background: url(@bgListBlackDot) no-repeat left center ;
+		line-height: 30px;
+		height: 30px;
+		overflow: hidden;
+		.time{
+			float: right;
+			padding-left: 10px;
+		}
+	}
+}
+
 .listBlueDot{
 	font-size: 14px;
 	li{
@@ -234,8 +252,9 @@ body{
 	line-height: 29px;
 	font-size: 14px;
 	font-weight: bold;
-	border-bottom: 1px solid #ccc;
+	border: 1px solid #ccc;
 	padding-left: 15px;
+	background: #F8F8F8;
 	color:@lightBlue;
 	a{
 		color:@lightBlue;
@@ -271,12 +290,12 @@ body{
 .wrapGrey{
 	border:1px solid #ccc;
 	border-top: none;
-	padding:3px 5px;
+	padding:5px 8px;
 }
 .wrapOrange{
 	border: 1px solid #EE721C;
 	border-top: none;
-	padding:3px 5px;
+	padding:5px 8px;
 }
 .position{
 	line-height: 30px;
@@ -298,6 +317,7 @@ body{
 	border-top: 1px solid #BDD8ED;
 	border-left: 1px solid #BDD8ED;
 	line-height: 27px;
+	margin-top: 8px;
 	dl{
 		border:1px solid #BDD8ED;
 		border-top:0;
@@ -374,8 +394,11 @@ body{
 	margin-top: 8px;
 	.iContent{
 		border:1px solid #ccc;
+		.titleGrey{
+			border: none;
+			border-bottom: 1px solid #CCC;
+		}
 	}
-
 	.iOrderAPage{
 		padding:10px;
 	}

@@ -47,7 +47,8 @@
 					<span>{R::getTitle(1)}</span>
 				</a>
 			</div>
-			<p class="more"><a href="">查看更多</a></p>
+			<p class="more"><a href="#">查看更多</a></p>
+			<p class="more"><a href="#" class="btn">更多外观图片&gt;&gt;</a></p>
 		</div>
 		{template 'page', 'common'}
 	</div>

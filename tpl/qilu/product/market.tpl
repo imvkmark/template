@@ -1,5 +1,5 @@
 <div class="layout productCommon productMarket clear">
-	<div class="col-list-left">
+	<div class="col-product-left">
 		<div class="commonBBox">
 			<h3 class="title">图片分类</h3>
 			<div>
@@ -109,47 +109,12 @@
 		</div>
 
 	</div>
-	<div class="col-list-right">
-		<div class="adSide">
-			<img src="{DT_PROJECT}images/imgSideA.jpg" alt="">
-		</div>
-		<div class="iContent hotPhone">
-			<h3 class="titleGrey">
-				最新安卓手机
-			</h3>
-			<div class="hotPhoneList">
-				<ul class="listNum">
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-					<li><a href="#">{R::getTitle(1)}</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="iContent userCommentWrapper">
-			<h3 class="titleGrey">
-				网友交流热帖
-			</h3>
-			<div class="userComments">
-				<ul class="listBlueDot">
-					<li><a href="#">甘肃永昌69人因不明原因致急性肠胃炎</a></li>
-					<li><a href="#">甘肃永昌69人因不明原因致急性肠胃炎</a></li>
-					<li><a href="#">习近平赴芦山看望受灾民众：非常牵挂大家</a></li>
-					<li><a href="#">习近平赴芦山看望受灾民众：非常牵挂大家</a></li>
-					<li><a href="#">辽宁鞍海公路两辆客车迎面相撞致多人死伤</a></li>
-					<li><a href="#">辽宁鞍海公路两辆客车迎面相撞致多人死伤</a></li>
-					<li><a href="#">网贴称温州苍南村民下跪抗议强拆被殴打</a></li>
-					<li><a href="#">日本拟抽地下水入海抑制反应堆污染水增加</a></li>
-					<li><a href="#">长沙女孩坠落下水道2月后遗体在岳阳发现</a></li>
-					<li><a href="#">外交部证实朝方未获赎金 要求此类事件不再发生</a></li>
-				</ul>
-			</div>
-		</div>
+	<div class="col-product-right">
+		{template 'side-intro', 'product'}
+		{template 'side-hot', 'product'}
+		{template 'side-suggest', 'product'}
+		{template 'side-ad', 'product'}
+		{template 'side-hot', 'product'}
+		{template 'side-viewother', 'product'}
 	</div>
 </div>

@@ -139,8 +139,7 @@
 				</dd>
 			</dl>
 		</div>
-		
-		{template 'page', 'product'}
+		{template 'page', 'common'}
 	</div>
 	<div class="col-product-right">
 		{template 'side-intro', 'product'}

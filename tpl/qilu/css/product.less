@@ -43,6 +43,9 @@
 		}
 
 	}
+	.userCommentWrapper{
+		margin-top: 8px;
+	}
 	.productSideViewOther{
 		margin-top: 8px;
 		h3{
@@ -505,6 +508,18 @@
 		margin: 0;
 		font-size: 14px;
 		text-align: center;
+		.btn{
+			background: url(@bgPiclistBtn) no-repeat 0 0;
+			width: 170px;
+			height: 30px;
+			display: inline-block;
+			line-height: 30px;
+			color: #8C3200;
+			&:hover{
+				color: @hoverColor;
+			}
+			font-weight: bold;
+		}
 	}
 }
 
@@ -512,10 +527,19 @@
 	margin-top: 8px;
 	.commonBBox{
 		border: 1px solid #EE721C;
+		.title{
+			margin-top: 0;
+		}
 	}
+
 	.items{
 		border: 1px solid #EE721C;
 		padding-left:15px;
+	}
+	.productSideSuggest{
+		.items{
+			border: none;
+		}
 	}
 	.title{
 		line-height:32px ;
@@ -524,6 +548,20 @@
 		color: #fff;
 		padding-left: 2em;
 		margin-top: 8px;
+	}
+	.productSideViewOther{
+		border:none;
+		.item{
+			.title{
+				line-height: 32px;
+				height: 32px;
+				color: #fff;
+				&:hover{
+					color: @linkColor;
+				}
+				padding-left: 0;
+			}
+		}
 	}
 	.item{
 		padding-top: 10px;
@@ -582,5 +620,35 @@
 	}
 	.listPages{
 		text-align: center;
+	}
+}
+
+.productMarketDetail{
+	.content{
+		border: 1px solid #ccc;
+		padding:20px 50px;
+		font-size: 14px;
+		color:#666;
+		line-height: 28px;
+		h3{
+			color: #000;
+			text-align: center;
+			font-weight: bold;
+			font-family: @fontChnTitle;
+			font-size: 24px;
+		}
+		.info{
+			font-size: 12px;
+			color: #959595;
+			text-align: center;
+		}
+		.detail{
+			p{
+				text-indent: 2em;
+			}
+		}
+	}
+	.extend{
+		margin-top: 8px;
 	}
 }

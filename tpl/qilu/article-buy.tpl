@@ -8,6 +8,7 @@
 
 {template 'position', 'common'}
 
-{template 'ping', 'article'}
+{* 配件导购 *}
+{template 'buy', 'article'}
 
 {template 'footer', 'common'}

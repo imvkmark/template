@@ -62,8 +62,7 @@
 	</div>
 </div>
 <div class="layout sdinfoBottom">
-	<iframe src="http://www.sdinfo.net/include/indexfloor1.htm
-" frameborder="0" height="120" width="1000"></iframe>
+	{*<iframe src="http://www.sdinfo.net/include/indexfloor1.htm" frameborder="0" height="120" width="1000"></iframe>*}
 </div>
 </body>
 </html>

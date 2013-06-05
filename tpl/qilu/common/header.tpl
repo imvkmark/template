@@ -28,8 +28,7 @@
 		<a href="#" class="fr"><img src="{DT_PROJECT}images/topSina.jpg" alt="#"></a>
 	</div>
 	<div class="sdinfoTop">
-	<iframe src="http://www.sdinfo.net/include/indexhead1.htm
-" frameborder="0" height="65" width="1000"></iframe>
+	{*<iframe src="http://www.sdinfo.net/include/indexhead1.htm" frameborder="0" height="65" width="1000"></iframe>*}
 	</div>
 	<div class="sdinfo fc">
 		<div class="logo">

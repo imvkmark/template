@@ -41,7 +41,7 @@
 			{template 'price-items', 'product'}
 			{template 'price-items', 'product'}
 			{template 'price-items', 'product'}
-			{template 'page', 'product'}
+			{template 'page', 'common'}
 			
 		</div>
 	</div>

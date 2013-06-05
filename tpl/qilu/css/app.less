@@ -1,0 +1,107 @@
+.appTab{
+	height: 29px;
+	background: url(@bgAppTab) repeat-x 0 -71px;
+	line-height: 29px;
+	li{
+		float: left;
+		height: 29px;
+		margin-left: 5px;
+		a{
+			display: inline-block;
+			height: 29px;
+			padding-left: 20px;
+			background: url(@bgAppTab) repeat-x 0 -33px;
+			color:@lightBlue;
+			&:hover{
+				color: @hoverColor;
+			}
+		}
+		span{
+			display: inline-block;
+			height: 29px;
+			width: 20px;
+			background: url(@bgAppTab) repeat-x right -33px;
+		}
+	}
+	.active{
+		a{
+			background-position: 0 0;
+		}
+		span{
+			background-position: right 0;
+		}
+	}
+}
+.appIdx{
+	.focus{
+
+	}
+	.focus-left{
+		float: left;
+		width: 283px;
+		border: 1px solid #ccc;
+	}
+	.focus-center{
+		border:1px solid #ccc;
+		background:#f8f8f8;
+		float: left;
+		margin-left: 10px;
+		width: 420px;
+		.content{
+			padding:5px;
+		}
+		.firstFocus{
+			border-bottom:1px dashed #ccc;
+			.cat{
+				width: 37px;
+				height: 30px;
+				line-height: 30px;
+				background: url(@bgFocusTitleCat) no-repeat 0 0;
+				display: inline-block;
+				padding-right: 15px;
+				font-size: 12px;
+				color: #fff;
+				font-weight: normal;
+				padding-left: 5px;
+			}
+			h3{
+				padding-top: 7px;
+				height: 30px;
+				line-height: 30px;
+				a{
+					color: #CA0002;
+					&:hover{
+						color: @hoverColor;
+					}
+				}
+			}
+			.info{
+				line-height: 22px;
+				text-indent: 2em;
+				.more{
+					color: #EE721C;
+					&:hover{
+						color: @linkColor;
+					}
+				}
+			}
+		}
+		.infolist{
+			padding:3px 0;
+			.listGreyDot{
+				li{
+					font-size: 12px;
+					line-height: 22px;
+					height: 22px;
+					width: 183px;
+					float: left;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+	.focus-right{
+		width: 230px;
+		float: right;
+	}
+}
