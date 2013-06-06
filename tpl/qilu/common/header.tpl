@@ -6,9 +6,9 @@
 	<link rel="stylesheet/less" type="text/css" href="{DT_PROJECT}css/_init.less">
 	<script type="text/javascript">
 	less = {
-		env: "development", // or "production"
-		async: false,       // load imports async
-		poll: 1000         // when in watch mode, time in ms between polls
+		env: "development",
+		async: false,
+		poll: 1000
 	};
 	</script>
 	<script src="{DT_SCRIPT}less.js"></script>

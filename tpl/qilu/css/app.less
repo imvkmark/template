@@ -32,6 +32,17 @@
 		}
 	}
 }
+.appTitle{
+	background: url(@bgAppTitle) no-repeat right 0;
+	height: 30px;
+	h3, h4{
+		display: inline-block;
+		background: url(@bgAppTitle) no-repeat 0 0;
+		padding-left: 2em;
+		height: 30px;
+		line-height: 30px;
+	}
+}
 .appIdx{
 	.focus{
 
@@ -45,7 +56,7 @@
 		border:1px solid #ccc;
 		background:#f8f8f8;
 		float: left;
-		margin-left: 10px;
+		margin-left: 13px;
 		width: 420px;
 		.content{
 			padding:5px;
@@ -87,7 +98,7 @@
 			}
 		}
 		.infolist{
-			padding:3px 0;
+			padding:5px 0;
 			.listGreyDot{
 				li{
 					font-size: 12px;
@@ -104,4 +115,99 @@
 		width: 230px;
 		float: right;
 	}
+	.appFocusSuggest{
+		padding: 5px 0;
+		.item{
+			margin-left: 10px;
+			width: 65px;
+			float: left;
+			overflow: hidden;
+			height: 90px;
+			img{
+				width: 65px;
+			}
+			span{
+				display: block;
+				text-align: center;
+				height: 24px;
+				line-height: 24px;
+				overflow: hidden;
+			}
+		}
+	}
+	.ad{
+		margin-top: 8px;
+	}
+}
+.suggestToday{
+	margin-top: 8px;
+	.content{
+		padding: 10px;
+		.item{
+			float: left;
+			width: 216px;
+			margin-left: 18px;
+			padding: 10px 0;
+			img{
+				float: left;
+				width: 65px;
+				padding-right: 10px;
+			}
+			h4{
+				line-height: 22px;
+				height: 22px;
+				overflow: hidden;
+			}
+			span{
+				display: block;
+				height: 22px;
+				line-height: 22px;
+				color: #8a8a8a ;
+			}
+		}
+	}
+}
+.catSuggest{
+	.items{
+		padding: 10px;
+	}
+	.item{
+		width: 83px;
+		padding: 10px 15px;
+		float: left;
+		height: 100px;
+		overflow: hidden;
+		img{
+			width: 83px;
+		}
+		span{
+			display: block;
+			height: 25px;
+			line-height: 25px;
+			text-align: center;
+			color: @lightBlue;
+			&:hover{
+				color: @hoverColor;
+			}
+		}
+	}
+}
+.appCatWrap{
+	margin-top: 8px;
+}
+.appIcon{
+	background: url(@bgAppIcon) no-repeat 0 0;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	width: 25px;
+}
+.appIconWp{
+	background-position: 0 0;
+}
+.appIconAndriod{
+	background-position: -25px 0;
+}
+.appIconMac{
+	background-position: -50px 0;
 }
