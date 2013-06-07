@@ -130,7 +130,7 @@
 							<img class="appImg" src="{R::appImg()}" alt="#">
 							<h4><a href="#">{R::getTitle(1)}</a></h4>
 							<span>评分: <img class="star" src="{DT_PROJECT}images/imgAppStar4.jpg" alt="#"></span>
-							<span>下载数量:32333</span>
+							<span>类别: <a href="#">游戏</a></span>
 						</div>
 					{/for}
 				</div>

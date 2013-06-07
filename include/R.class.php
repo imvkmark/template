@@ -36,9 +36,13 @@ class R {
 		'新晋歌手Nayer凭借超大号的“开胸”礼服亮相红毯，不管你是同性恋还是异性恋，相信都会把视线移向那两颗硕大的“肉蛋”，久久无法把视线移开。再从时尚的角度来说：本次尝试新奇大胆，黑色手套搭配很到位。',
 	);
 
-	public static function getTitle($num = 10) {
+	public static function getTitle($num = 10, $wordCount = 0) {
 		if ($num === 1) {
-			return self::$titles[rand(0, count(self::$titles)-1)];
+			$item = self::$titles[rand(0, count(self::$titles)-1)];
+			if ($wordCount) {
+				$item = mb_strcut($item, 0, $wordCount, "UTF-8");
+			}
+			return $item;
 		} else {
 			return array_rand(self::$titles, $num);
 		}
