@@ -138,7 +138,7 @@
 	</div>
 </div>
 
-<div class="layout hotphonecase appCatWrap clear">
+<div class="layout appCatWrap clear">
 	<div class="col-main-left">
 		<div class="catSuggest">
 			<div class="appTitle">
@@ -154,100 +154,41 @@
 					<li><a href="#">安卓游戏<span>&nbsp;</span></a></li>
 				</ul>
 				<div class="clear">
+					{for $i=1 $i<=12 $i++}
 					<div class="item">
 						<img src="{R::appImg()}" alt="">
 						<span>分类:安全</span>
 					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
-					<div class="item">
-						<img src="{R::appImg()}" alt="">
-						<span>分类:安全</span>
-					</div>
+					{/for}
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="col-main-right">
-		<div class="iContent">
-			<h3>手机推荐排行榜</h3>
-			<p class="caseTab">
-				<a href="#">热门推荐</a>
-				<a href="#" class="active">新品推荐</a>
-			</p>
-			<div class="caseSuggest clear">
-				<div class="suggestItem">
-					<div class="imgWrapper">
-						<img src="http://www.www.cc/template/tpl/qilu/images/imgHotPhone.jpg" alt="#">
+		<div class="hotphonecase">
+			<h3 class="titleGrey">手机推荐排行榜</h3>
+			<div class="clear wrapGrey">
+				<p class="caseTab">
+					<a href="#">热门推荐</a>
+					<a href="#" class="active">新品推荐</a>
+				</p>
+				<div class="caseSuggest">
+					{for $i=0 $i<4 $i++}
+					<div class="suggestItem">
+						<div class="imgWrapper">
+							<img src="http://www.www.cc/template/tpl/qilu/images/imgHotPhone.jpg" alt="#">
+						</div>
+						<a class="suggestTitle" href="">眼镜蛇耳机</a>
+						<span class="suggestPrice">￥30.00</span>
 					</div>
-					<a class="suggestTitle" href="">眼镜蛇耳机</a>
-					<span class="suggestPrice">￥30.00</span>
-				</div>
-				<div class="suggestItem">
-					<div class="imgWrapper">
-						<img src="http://www.www.cc/template/tpl/qilu/images/imgHotPhone.jpg" alt="#">
-					</div>
-					<a class="suggestTitle" href="">眼镜蛇耳机</a>
-					<span class="suggestPrice">￥30.00</span>
-				</div>
-				<div class="suggestItem">
-					<div class="imgWrapper">
-						<img src="http://www.www.cc/template/tpl/qilu/images/imgHotPhone.jpg" alt="#">
-					</div>
-					<a class="suggestTitle" href="">眼镜蛇耳机</a>
-					<span class="suggestPrice">￥30.00</span>
-				</div>
-				<div class="suggestItem">
-					<div class="imgWrapper">
-						<img src="http://www.www.cc/template/tpl/qilu/images/imgHotPhone.jpg" alt="#">
-					</div>
-					<a class="suggestTitle" href="">眼镜蛇耳机</a>
-					<span class="suggestPrice">￥30.00</span>
+					{/for}
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="layout hotapp appCatWrap clear">
+<div class="layout appCatWrap clear">
 	<div class="col-main-left">
 		<div class="catSuggest">
 			<div class="appTitle">
@@ -316,9 +257,9 @@
 		</div>
 	</div>
 	<div class="col-main-right">
-		<div class="iContent">
-			<h3>软件下载周排行榜</h3>
-			<div class="appDown">
+		<div class="hotapp">
+			<h3 class="titleGrey">软件下载周排行榜</h3>
+			<div class="appDown wrapGrey">
 				<ul class="listAppDown">
 					<li class="bignum">
 						<a href="#"><img src="http://www.www.cc/template/tpl/qilu/images/app/15.jpg" alt=""></a>

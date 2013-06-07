@@ -2,7 +2,6 @@
 .resetProjectFont(@fontFamily, @fontSize, @fontColor);
 .resetProjectLink(@linkColor, @hoverColor);
 .commonClassGen();
-.aLink('highlight', #c00, #c00);
 body{
 	background:#fff url(@bgBody) repeat-x 0 0;
 	.minHeight(1000);
@@ -10,51 +9,51 @@ body{
 .layout{
 	width:960px;
 	margin:0 auto;
-}
-.col-list-left{
-	width: 690px;
-	float: left;
-}
-.col-list-right{
-	float: right;
-	width: 260px;
-}
+	.col-list-left{
+		width: 690px;
+		float: left;
+	}
+	.col-list-right{
+		float: right;
+		width: 260px;
+	}
 
-.col-main-left{
-	float: left;
-	width: 715px;
-}
-.col-main-right{
-	float:right;
-	width:240px;
-	h3{
-		border-bottom: 1px solid #ccc;
-		padding-left: 20px;
-		font-size: 14px;
-		font-weight: bold;
-		font-family: @fontMinor;
-		height: 30px;
-		line-height: 30px;
+	.col-main-left{
+		float: left;
+		width: 715px;
+	}
+	.col-main-right{
+		float:right;
+		width:240px;
+	}
+	.col-product-left{
+		float: left;
+		width: 760px;
+	}
+	.col-product-right{
+		float: right;
+		width: 190px;
+	}
+
+	.col-app-left{
+		width: 750px;
+		float: left;
+	}
+	.col-app-right{
+		width: 200px;
+		float: right;
 	}
 }
-.col-product-left{
-	float: left;
-	width: 760px;
-}
-.col-product-right{
-	float: right;
-	width: 190px;
-}
 
-.col-app-left{
-	width: 750px;
-	float: left;
+.mt8{
+	margin-top: 8px;
 }
-.col-app-right{
-	width: 200px;
-	float: right;
+.aLightBlue(){
+	color: @lightBlue;
+	&:hover{
+		color: @linkColor;
+	}
 }
-
 // ul use 
 .listSubleft{
 	background: url(@bgListSubLeft) no-repeat 0 0 ;

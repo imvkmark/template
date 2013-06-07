@@ -284,6 +284,9 @@
 			padding:5px 10px 10px;
 		}
 	}
+	.wrapGrey{
+		padding: 0;
+	}
 	.col-hotcasecompare{
 		float: left;
 		width: 300px;
@@ -297,59 +300,56 @@
 			width: 175px;
 		}
 	}
-	.col-main-right{
-		.caseTab{
-			height: 23px;
-			border-bottom: 1px solid #ccc;
-			background: #f2f0f1;
-			a{
-				display: inline-block;
-				width: 119px;
-				height: 28px;
-				line-height: 23px;
-				float: left;
-				text-align: center;
-			}
-			.active{
-				position: relative;
-				color:#fff;
-				background: url(@bgMenuNarrow) no-repeat center 0;	
-			}
-		}
-		.caseSuggest{
-
-		}
-		.suggestItem{
-			width: 104px;
-			padding-left: 15px;
+	.caseTab{
+		height: 23px;
+		border-bottom:1px solid #ccc;
+		background: #f2f0f1;
+		a{
+			display: inline-block;
+			width: 119px;
+			height: 28px;
+			line-height: 23px;
 			float: left;
-			padding-top: 10px;
-			padding-bottom: 9px;
-			.imgWrapper{
-				padding-left:17px;
-			}
-			img{
-				width: 65px;
-				height: 65px;
-			}
-		}
-		.suggestTitle{
-			display: block;
 			text-align: center;
 		}
-		.suggestPrice{
-			display: block;
-			color: @darkRed;
-			text-align: center;
-			font-weight: bold;
+		.active{
+			position: relative;
+			color:#fff;
+			background: url(@bgMenuNarrow) no-repeat center 0;
 		}
+	}
+	.caseSuggest{
 
 	}
+	.suggestItem{
+		width: 104px;
+		padding-left: 15px;
+		float: left;
+		padding-top: 10px;
+		padding-bottom: 9px;
+		.imgWrapper{
+			padding-left:17px;
+		}
+		img{
+			width: 65px;
+			height: 65px;
+		}
+	}
+	.suggestTitle{
+		display: block;
+		text-align: center;
+	}
+	.suggestPrice{
+		display: block;
+		color: @darkRed;
+		text-align: center;
+		font-weight: bold;
+	}
+
 
 }
 
 .hotapp{
-	margin-top: 8px;
 	.iContent{
 		border: 1px solid #ccc;
 	}
@@ -446,6 +446,10 @@
 	.appDown{
 		padding-top: 10px;
 		padding-bottom: 8px;
+		p{
+			line-height: 20px;
+			height: 20px;
+		}
 	}
 
 }

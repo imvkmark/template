@@ -16,7 +16,7 @@
 	</div>
 </div>
 <div class="layout">
-	<div class="hotapp clear">
+	<div class="hotapp mt8 clear">
 		<div class="col-main-left">
 			<div class="iContent clear">
 				<div class="clear">
@@ -96,36 +96,34 @@
 				
 		</div>
 		<div class="col-main-right">
-			<div class="iContent">
-				<h3>软件下载周排行榜</h3>
-				<div class="appDown">
-					<ul class="listAppDown">
-						<li class="bignum">
-							<a href="#"><img src="{R::appImg()}" alt=""></a>
-							<a href="#" class="title">愤怒的小鸟</a>
-							<p>软件类型:游戏</p>
-							<p>收费方式:免费</p>
-						</li>
-						<li class="bignum">
-							<a href="#"><img src="{R::appImg()}" alt=""></a>
-							<a href="#" class="title">愤怒的小鸟</a>
-							<p>软件类型:游戏</p>
-							<p>收费方式:免费</p>
-						</li>
-						<li class="bignum">
-							<a href="#"><img src="{R::appImg()}" alt=""></a>
-							<a href="#" class="title">愤怒的小鸟</a>
-							<p>软件类型:游戏</p>
-							<p>收费方式:免费</p>
-						</li>
-						<li><a href="#">愤怒的小鸟</a></li>
-						<li><a href="#">愤怒的小鸟</a></li>
-						<li><a href="#">愤怒的小鸟</a></li>
-						<li><a href="#">愤怒的小鸟</a></li>
-						<li><a href="#">愤怒的小鸟</a></li>
-						<li><a href="#">愤怒的小鸟</a></li>
-					</ul>
-				</div>
+			<h3 class="titleGrey">软件下载周排行榜</h3>
+			<div class="appDown wrapGrey">
+				<ul class="listAppDown">
+					<li class="bignum">
+						<a href="#"><img src="{R::appImg()}" alt=""></a>
+						<a href="#" class="title">愤怒的小鸟</a>
+						<p>软件类型:游戏</p>
+						<p>收费方式:免费</p>
+					</li>
+					<li class="bignum">
+						<a href="#"><img src="{R::appImg()}" alt=""></a>
+						<a href="#" class="title">愤怒的小鸟</a>
+						<p>软件类型:游戏</p>
+						<p>收费方式:免费</p>
+					</li>
+					<li class="bignum">
+						<a href="#"><img src="{R::appImg()}" alt=""></a>
+						<a href="#" class="title">愤怒的小鸟</a>
+						<p>软件类型:游戏</p>
+						<p>收费方式:免费</p>
+					</li>
+					<li><a href="#">愤怒的小鸟</a></li>
+					<li><a href="#">愤怒的小鸟</a></li>
+					<li><a href="#">愤怒的小鸟</a></li>
+					<li><a href="#">愤怒的小鸟</a></li>
+					<li><a href="#">愤怒的小鸟</a></li>
+					<li><a href="#">愤怒的小鸟</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>

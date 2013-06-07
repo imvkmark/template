@@ -35,3 +35,9 @@ template
 
 	使用 {DT_PATH}?file=_smp 来访问tpl/目录下的html文件, 文件会自动编译模版语法
 	{DT_PATH} 为访问地址
+
+css定义方法
+----------
+	layout
+		宽度布局. 在一级别的不允许有padding值 和border值,  因为layout已经固定宽度, 一般都是用来做margin-top定位使用
+	使用前缀来划分区块, 区块内部使用通用的简写名称来定义. 通用的简写名称不一定使用i开头

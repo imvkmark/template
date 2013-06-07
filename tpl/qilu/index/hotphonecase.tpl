@@ -16,7 +16,7 @@
 	</div>
 </div>
 <div class="layout">
-	<div class="hotphonecase clear">
+	<div class="hotphonecase mt8 clear">
 		<div class="col-main-left">
 			<div class="iContent clear">
 				<div class="col-hotcaseinfo">
@@ -80,41 +80,22 @@
 			</div>
 		</div>
 		<div class="col-main-right">
-			<div class="iContent">
-				<h3>手机推荐排行榜</h3>
+			<h3 class="titleGrey">手机推荐排行榜</h3>
+			<div class="wrapGrey clear">
 				<p class="caseTab">
 					<a href="#">热门推荐</a>
 					<a href="#" class="active">新品推荐</a>
 				</p>
 				<div class="caseSuggest clear">
-					<div class="suggestItem">
-						<div class="imgWrapper">
-							<img src="{DT_PROJECT}images/imgHotPhone.jpg" alt="#">
+					{for $i=0 $i<=3 $i++}
+						<div class="suggestItem">
+							<div class="imgWrapper">
+								<img src="{DT_PROJECT}images/imgHotPhone.jpg" alt="#">
+							</div>
+							<a class="suggestTitle" href="">眼镜蛇耳机</a>
+							<span class="suggestPrice">￥30.00</span>
 						</div>
-						<a class="suggestTitle" href="">眼镜蛇耳机</a>
-						<span class="suggestPrice">￥30.00</span>
-					</div>
-					<div class="suggestItem">
-						<div class="imgWrapper">
-							<img src="{DT_PROJECT}images/imgHotPhone.jpg" alt="#">
-						</div>
-						<a class="suggestTitle" href="">眼镜蛇耳机</a>
-						<span class="suggestPrice">￥30.00</span>
-					</div>
-					<div class="suggestItem">
-						<div class="imgWrapper">
-							<img src="{DT_PROJECT}images/imgHotPhone.jpg" alt="#">
-						</div>
-						<a class="suggestTitle" href="">眼镜蛇耳机</a>
-						<span class="suggestPrice">￥30.00</span>
-					</div>
-					<div class="suggestItem">
-						<div class="imgWrapper">
-							<img src="{DT_PROJECT}images/imgHotPhone.jpg" alt="#">
-						</div>
-						<a class="suggestTitle" href="">眼镜蛇耳机</a>
-						<span class="suggestPrice">￥30.00</span>
-					</div>
+					{/for}
 				</div>
 			</div>
 		</div>
