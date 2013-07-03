@@ -10,7 +10,6 @@ if(strpos($file, ':')) {
 	$dir = $od[0];
 	$file = $od[1];
 }
-include DT_ROOT. '/tpl/'.$pro.'/config.inc.php';
 define('DT_PROJECT', DT_PATH.'tpl/'.$pro.'/');
 define('DT_PROJECT_PATH', DT_ROOT.'/tpl/'.$pro.'/');
 if ($dir) {

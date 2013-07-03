@@ -1,0 +1,212 @@
+.resetBrowser();
+.resetProjectFont(@fontFamily, @fontSize, @fontColor);
+.resetProjectLink(@colorLink, @colorHover);
+.commonClassGen();
+body{
+	background:#fff url(@bgBody) repeat-x 0 0;
+	.minHeight(1000);
+}
+.layout{
+	width:1005px;
+	margin:0 auto;
+}
+
+.mt8{
+	margin-top: 8px;
+}
+
+// ul use 
+.listSubleft{
+	background: url(@bgListSubLeft) no-repeat 0 0 ;
+	line-height: 32px;
+	padding-right: 10px;
+	li{
+		height: 32px;
+		.ellipsis();
+	}
+	.num{
+		display: inline-block;
+		width: 43px;
+		text-align: center;
+		color: #fff;
+	}
+}
+
+.listBigCat{
+	line-height: 25px;
+	font-size: 14px;
+	li{
+		a{
+			padding:0 10px;
+		}
+	}
+	.iCat{
+		a{
+			color:@colorHover;
+			&:hover{
+				color:@colorLink;
+			}
+		}
+		padding-right: 10px;
+		border-right: 1px solid #ccc;
+	}
+
+}
+
+.listBlackDot{
+	font-size: 14px;
+	li{
+		padding-left: 10px;
+		background: url(@bgListBlackDot) no-repeat left center ;
+		line-height: 30px;
+		height: 30px;
+		overflow: hidden;
+	}
+}
+
+.listGreyDot{
+	font-size: 14px;
+	li{
+		padding-left: 10px;
+		background: url(@bgListBlackDot) no-repeat left center ;
+		line-height: 30px;
+		height: 30px;
+		overflow: hidden;
+		.time{
+			float: right;
+			padding-left: 10px;
+		}
+	}
+}
+
+.listBlueDot{
+	font-size: 14px;
+	li{
+		padding-left: 10px;
+		background: url(@bgListBlueDot) no-repeat left center ;
+		line-height: 30px;
+		height: 30px;
+		overflow: hidden;
+		a{
+			color: @colorLightBlue;
+			&:hover{
+				color: @colorLink;
+			}
+		}
+	}
+	
+}
+
+.listBignum{
+	background: url(@bgListBignum) no-repeat 0 -7px ;
+	padding-left:42px;
+	li{
+		height: 73px;
+		.title{
+			line-height: 24px;
+			height: 24px;
+			overflow: hidden;
+			color:@colorDarkBlue;
+			display: block;
+			&:hover{
+				color: @colorLink;
+			}
+		}
+		img{
+			float: right;
+			border: 1px solid #CCCCCC;
+			width: 60px;
+			height: 60px;
+			padding:2px;
+		}
+		.intro{
+			padding-top:5px;
+			color: #CCCCCC;
+		}
+	}
+}
+.listNum{
+	background: url(@bgListNum) no-repeat 0 3px;
+	padding-left:32px;
+	li{
+		height: 32px;
+		line-height: 32px;
+		overflow: hidden;
+		a{
+			color: @colorLightBlue;
+			&:hover{
+				color:@colorLink;
+			}
+		}
+	}
+}
+.listRoundNum{
+	background: url(@bgListRoundNum) no-repeat 0 0px;
+	li{
+		height: 31px;
+		line-height: 31px;
+		overflow: hidden;
+		padding-left:32px;
+		border-bottom: 1px dashed #ccc;
+		a{
+			color: @colorLightBlue;
+			&:hover{
+				color:@colorLink;
+			}
+		}
+	}
+}
+
+
+
+.page{
+	padding: 10px 0;
+	a{
+		border: 1px solid #FFB35D;
+		background: #FFF6DD;
+		display: inline-block;
+		height: 20px;
+		line-height: 22px;
+		padding:0 5px;
+		&:hover{
+			border:1px solid #ccc;
+		}
+	}
+	.prev, .next, .prevDisabled,.nextDisabled{
+		border:1px solid #fff;
+		display: inline-block;
+		width: 60px;
+		height: 24px;
+		line-height: 24px;
+		span{
+			visibility: hidden;
+		}
+		&:hover{
+			border:1px solid #fff;
+		}
+	}
+	.current{
+		border: 1px solid @colorLightBlue;
+		background: #fff;
+	}
+}
+
+.nav{
+	height: 35px;
+	font-size: 14px;
+	font-family: '微软雅黑', Arial, '宋体';
+	li{
+		float: left;
+		height:35px;
+		line-height: 35px;
+	}
+	a{
+		color:#fff;
+		display: inline-block;
+		padding:0 15px;
+		&:hover{
+			color:#000;
+		}
+	}
+}
+
