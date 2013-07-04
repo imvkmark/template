@@ -4,6 +4,33 @@
 }
 .menu{
 	height: 43px;
+	font-family: @fontMinor;
+	ul{
+		padding-top: 11px;
+		height: 21px;
+		li{
+			float: left;
+			height: 21px;
+			line-height: 21px;
+			text-align: center;
+			border-right: 1px solid #020202;
+			padding:0 10px;
+			a{
+				display: inline-block;
+				width: 75px;
+				height: 21px;
+			}
+		}
+		.active{
+			a{
+				background: url(@bgMenu) no-repeat center center;
+				color: #fff;
+			}
+		}
+		.end{
+			border-right:none;
+		}
+	}
 }
 .banner{
 	height: 375px;

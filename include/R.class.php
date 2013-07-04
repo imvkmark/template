@@ -1,4 +1,11 @@
 <?php
+/*
+ *
+ * @package
+ * @author     Mark
+ * @copyright  Copyright (c) 2013 ixdcw team
+ * @version    $Id$
+ */
 class R {
 	public static $titles = array(
 		'外交部：美方未拿出所谓中方网络攻击证据',
@@ -36,9 +43,14 @@ class R {
 		'新晋歌手Nayer凭借超大号的“开胸”礼服亮相红毯，不管你是同性恋还是异性恋，相信都会把视线移向那两颗硕大的“肉蛋”，久久无法把视线移开。再从时尚的角度来说：本次尝试新奇大胆，黑色手套搭配很到位。',
 	);
 
+	/**
+	 * @param int $num
+	 * @param int $wordCount
+	 * @return mixed|string
+	 */
 	public static function getTitle($num = 10, $wordCount = 0) {
 		if ($num === 1) {
-			$item = self::$titles[rand(0, count(self::$titles)-1)];
+			$item = self::$titles[rand(0, count(self::$titles) - 1)];
 			if ($wordCount) {
 				$item = mb_strcut($item, 0, $wordCount, "UTF-8");
 			}
@@ -48,54 +60,59 @@ class R {
 		}
 	}
 
+	/**
+	 * @param int $length
+	 * @return string
+	 */
 	public static function getDesc($length = 0) {
-		$desc = self::$descs[rand(0, count(self::$descs)-1)];
+		$desc = self::$descs[rand(0, count(self::$descs) - 1)];
 		if ($length) {
 			$desc = mb_strcut($desc, 0, $length, "UTF-8");
 		}
 		return $desc;
 	}
 
-	public static function getTime($format = 'Y-m-d'){
-		return date($format, time()-rand(1, 500000));
+	public static function getTime($format = 'Y-m-d') {
+		return date($format, time() - rand(1, 500000));
 	}
 
-	public static function appImg($num=''){
+	public static function appImg($num = '') {
 		$path = DT_PROJECT_PATH . '/images/app/';
 		$url  = DT_PROJECT . 'images/app/';
 		if (!$num) {
-			return $url . rand(1, File::count($path)).'.jpg';
+			return $url . rand(1, File::count($path)) . '.jpg';
 		} else {
-			return $url . $num.'.jpg';
+			return $url . $num . '.jpg';
 		}
 	}
 
-	public static function phoneImg($num='') {
+	public static function phoneImg($num = '') {
 		$path = DT_PROJECT_PATH . '/images/phone/';
 		$url  = DT_PROJECT . 'images/phone/';
 		if (!$num) {
-			return $url.rand(1, File::count($path)).'.jpg';
+			return $url . rand(1, File::count($path)) . '.jpg';
 		} else {
-			return $url.$num.'.jpg';
+			return $url . $num . '.jpg';
 		}
 	}
 
-	public static function logoImg($num='') {
+	public static function logoImg($num = '') {
 		$path = DT_PROJECT_PATH . '/images/logo/';
 		$url  = DT_PROJECT . 'images/logo/';
 		if (!$num) {
-			return $url.rand(1, File::count($path)).'.jpg';
+			return $url . rand(1, File::count($path)) . '.jpg';
 		} else {
-			return $url.$num.'.jpg';
+			return $url . $num . '.jpg';
 		}
 	}
-	public static function picImg($num='') {
+
+	public static function picImg($num = '') {
 		$path = DT_PROJECT_PATH . '/images/pic/';
 		$url  = DT_PROJECT . 'images/pic/';
 		if (!$num) {
-			return $url.rand(1, File::count($path)).'.jpg';
+			return $url . rand(1, File::count($path)) . '.jpg';
 		} else {
-			return $url.$num.'.jpg';
+			return $url . $num . '.jpg';
 		}
 	}
 }
