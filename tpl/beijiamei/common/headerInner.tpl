@@ -16,6 +16,6 @@
 	<script src="{DT_PATH}static/libs/less/1.3.3/less.js"></script>
 	<script src="{DT_PATH}static/libs/seajs/2.0.0/sea.js" data-config="config"></script>
 </head>
-<body class="bodyIdx">
+<body class="bodyInner">
 {template 'menu', 'common'}
 

@@ -29,6 +29,7 @@ var alias = {
 	'jd': 'libs/jDiaporama/2.0.0/jquery.jDiaporama',
 	'raty': 'libs/raty/2.5.2/jquery.raty',
 	'fancybox': 'libs/fancybox/2.1.5/jquery.fancybox',
+	'slide': 'libs/slide/1.0.0/jquery.slide',
 
 	// css
 	'uploadify-css': 'libs/uploadify/3.2.0/uploadify.css',

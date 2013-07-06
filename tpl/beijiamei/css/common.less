@@ -2,9 +2,11 @@
 .resetProjectFont(@fontFamily, @fontSize, @fontColor);
 .resetProjectLink(@colorLink, @colorHover);
 .commonClassGen();
-body{
+.bodyIdx{
 	background:#fff url(@bgBody) repeat-x 0 0;
-	.minHeight(1000);
+}
+.bodyInner{
+	background:#fff url(@bgBodyInner) repeat-x 0 0;
 }
 .layout{
 	width:1005px;
@@ -14,7 +16,49 @@ body{
 .mt8{
 	margin-top: 8px;
 }
-
+.mt5{
+	margin-top: 5px;
+}
+.pr3{
+	padding-right: 3px;
+}
+.pd10{
+	padding:10px;
+}
+.sprite {
+	background-image: url(@bgSprite);
+	background-repeat: no-repeat;
+}
+.sprite-more{
+	background-position: 0 0;
+	width: 21px;
+	height: 15px;
+	display: inline-block;
+}
+.sprite-intro{
+	height: 15px;
+	background-position: -10px -26px;
+}
+.sprite-introContent{
+	height: 136px;
+	background-position: -10px -286px;
+}
+.sprite-news{
+	height: 15px;
+	background-position: -10px -54px;
+}
+.sprite-product{
+	background-position: -10px -86px;
+	height: 15px;
+}
+.sprite-contact{
+	background-position: -10px -132px;
+	height: 73px;
+}
+.sprite-honor{
+	background-position: -10px -205px;
+	height: 73px;
+}
 // ul use 
 .listSubleft{
 	background: url(@bgListSubLeft) no-repeat 0 0 ;
@@ -78,7 +122,21 @@ body{
 		}
 	}
 }
-
+.listM{
+	font-size: 12px;
+	li{
+		padding-left: 10px;
+		background: url(@bgListM) no-repeat left center ;
+		line-height: 22px;
+		height: 22px;
+		overflow: hidden;
+		border-bottom: 1px solid #ccc;
+		.time{
+			float: right;
+			padding-left: 10px;
+		}
+	}
+}
 .listBlueDot{
 	font-size: 14px;
 	li{
@@ -210,3 +268,9 @@ body{
 	}
 }
 
+.a-left {
+	width: 235px;
+}
+.a-right{
+	width: 750px;
+}
