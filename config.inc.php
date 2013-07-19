@@ -1,4 +1,5 @@
 <?php
+//error_reporting(0);
 define('DT_ROOT', dirname(__FILE__));
 define('DT_INC', DT_ROOT.'/include');
 

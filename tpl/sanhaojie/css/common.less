@@ -1,0 +1,86 @@
+// common
+body {
+	background: url(@bgBody) repeat-x 0 0;
+	margin: 0;
+	font-family: @fontSong;
+	font-size: @fontSize;
+	color: @fontColor;
+}
+a {
+	color: @colorLink;
+	text-decoration: none;
+	&:hover {
+		color: @colorHover;
+	}
+}
+.cutterGrey {
+	color: @colorCutter;
+	padding: 0 5px;
+}
+.cutterBlue{
+	color: @colorDarkBlue;
+	padding: 0 5px;
+}
+.cutterLightBlue{
+	color: @colorTitleBlueBorder;
+	padding: 0 5px;
+}
+// float
+.fr, .iLeft, .iCenter { float: right; }
+.fl, .iRight { float: left; }
+.clear {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: ""; // Fixes Opera/contenteditable bug:
+		// http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.hideme {
+	visibility: hidden;
+}
+
+// layout
+.layout {
+	width: 980px;
+	margin: 0 auto;
+}
+// page
+.page {
+	padding: 10px 0;
+	a {
+		border: 1px solid #FFB35D;
+		background: #FFF6DD;
+		display: inline-block;
+		height: 20px;
+		line-height: 22px;
+		padding: 0 5px;
+		&:hover {
+			border: 1px solid #CCC;
+		}
+	}
+	.prev, .next, .prevDisabled, .nextDisabled {
+		border: 1px solid #FFF;
+		display: inline-block;
+		width: 60px;
+		height: 24px;
+		line-height: 24px;
+		span {
+			visibility: hidden;
+		}
+		&:hover {
+			border: 1px solid #FFF;
+		}
+	}
+	.current {
+		border: 1px solid @colorLightBlue;
+		background: #FFF;
+	}
+}
+

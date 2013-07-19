@@ -11,7 +11,9 @@ if(strpos($file, ':')) {
 	$file = $od[1];
 }
 define('DT_PROJECT', DT_PATH.'tpl/'.$pro.'/');
+$pr = DT_PROJECT;
 define('DT_PROJECT_PATH', DT_ROOT.'/tpl/'.$pro.'/');
+
 if ($dir) {
 	Template::show($file, $dir);
 } else {
