@@ -1,3 +1,4 @@
 <?php
 $b = null;
-var_dump(empty($b));
+$lines = file('http://www.ixdcw.com/');
+var_dump($lines);

@@ -1,6 +1,6 @@
 // common
 body {
-	background: url(@bgBody) repeat-x 0 0;
+	background: url(../images/bgBody.jpg) repeat-x 0 0;
 	margin: 0;
 	font-family: @fontSong;
 	font-size: @fontSize;
@@ -13,21 +13,21 @@ a {
 		color: @colorHover;
 	}
 }
-.cutterGrey {
+.cutter{
+	padding: 0 5px;
+}
+.cutter-grey{
 	color: @colorCutter;
-	padding: 0 5px;
 }
-.cutterBlue{
+.cutter-blue{
 	color: @colorDarkBlue;
-	padding: 0 5px;
 }
-.cutterLightBlue{
+.cutter-lightblue{
 	color: @colorTitleBlueBorder;
-	padding: 0 5px;
 }
 // float
-.fr, .iLeft, .iCenter { float: right; }
-.fl, .iRight { float: left; }
+.fl, .iLeft { float: left; }
+.fr, .iCenter, .iRight { float: right; }
 .clear {
 	*zoom: 1;
 	&:before,
@@ -51,8 +51,11 @@ a {
 	width: 980px;
 	margin: 0 auto;
 }
+.mt10{
+	margin-top: 10px;
+}
 // page
-.page {
+.part-page {
 	padding: 10px 0;
 	a {
 		border: 1px solid #FFB35D;
@@ -84,3 +87,82 @@ a {
 	}
 }
 
+.block-grey{
+	.head{
+		border:1px solid @colorBorder;
+		background:@colorTitleBg;
+		padding-left:19px;
+		font-weight: bold;
+		height: 28px;
+		line-height: 28px;
+		font-size: 14px;
+	}
+	.body{
+		border:1px solid @colorBorder;
+		border-top: none;
+	}
+	.body-common{
+		padding: 15px;
+	}
+	.body-narrow{
+		padding: 10px;
+	}
+}
+.block-title{
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 2px solid @colorLightBlue;
+	.category{
+		font-size: 18px;
+		font-weight: bold;
+		background: @colorLightBlue;
+		font-family: @fontYahei;
+		float: left;
+		padding: 0 10px;
+		color: #fff;
+		margin: 0;
+	}
+	.suggest{
+		float: right;
+	}
+}
+// list
+.li-qing{
+	padding-left:12px;
+	background: url('../images/bgListQing.jpg') no-repeat 3px center;
+	a{
+		color:@colorQing;
+		&:hover{
+			color:@colorHover;
+		}
+	}
+}
+.li-red{
+	padding-left:12px;
+	background: url('../images/bgListRed.jpg') no-repeat 3px center;
+	a{
+		color:@colorRed;
+		&:hover{
+			color:@colorHover;
+		}
+	}
+}
+.list-Qing{
+	li{
+		padding-left:12px;
+		background: url('../images/bgListQing.jpg') no-repeat 3px center;
+	}
+}
+.list-Red{
+	li{
+		padding-left:12px;
+		background: url('../images/bgListRed.jpg') no-repeat 3px center;
+	}
+}
+
+.list-Grey{
+	li{
+		padding-left:12px;
+		background: url('../images/bgListGrey.jpg') no-repeat 3px center;
+	}
+}

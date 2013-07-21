@@ -14,13 +14,16 @@
 		};
 	</script>
 	<script src="{DT_PATH}static/libs/less/1.3.3/less.js"></script>
+	<script>
+		less.watch();
+	</script>
 	<script src="{DT_PATH}static/libs/seajs/2.0.0/sea.js" data-config="config"></script>
 </head>
 <body>
-<div class="top layout clear">
+<div class="common-top layout clear">
 	<div class="iLeft">
-		加入收藏 <span class="cutterGrey">|</span>
-		三好街网
+		<a href="#">加入收藏</a> <span class="cutterGrey">|</span>
+		<a href="三好街网"></a>
 	</div>
 	<div class="iRight">
 		<a href="#">登陆</a> <span class="cutterGrey">|</span>
@@ -30,7 +33,7 @@
 		<a href="#">中润传媒旗下网站</a>
 	</div>
 </div>
-<div class="header layout clear">
+<div class="common-header layout clear">
 	<div class="iLeft">
 		<a href="#"><img src="{$pr}images/logo.jpg" alt=""></a>
 	</div>
@@ -41,57 +44,12 @@
 
 	</div>
 </div>
-<div class="menu layout`">
+<div class="common-menu layout`">
 
 </div>
-<div class="sublink layout clear">
+<div class="common-sublink layout clear">
 	<div class="iLeft"></div>
 	<div class="iRight">
 		<strong>分站联盟:</strong>
-	</div>
-</div>
-<div class="twoAd layout clear">
-	<div class="iLeft">
-
-	</div>
-	<div class="iRight">
-
-	</div>
-</div>
-<div class="oneAd layout clear">
-
-</div>
-<div class="textAd layout clear">
-	<ul>
-		<li><a href="#">测试链接</a></li>
-		<li><a href="#">测试链接</a></li>
-		<li><a href="#">测试链接</a></li>
-		<li><a href="#">测试链接</a></li>
-		<li><a href="#">测试链接</a></li>
-		<li><a href="#">测试链接</a></li>
-	</ul>
-</div>
-<div class="focus layout clear">
-	<div class="iLeft"></div>
-	<div class="iCenter"></div>
-	<div class="iRight"></div>
-</div>
-<div class="twoAd layout clear">
-	<div class="iLeft">
-
-	</div>
-	<div class="iRight">
-
-	</div>
-</div>
-<div class="oneAd layout clear">
-
-</div>
-<div class="special">
-	<div class="iLeft">
-
-	</div>
-	<div class="iRight">
-
 	</div>
 </div>

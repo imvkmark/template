@@ -1,17 +1,17 @@
 //      - common -
-.top{
+.common-top{
 	height: 35px;
 	line-height: 35px;
 	font-size: 12px;
 }
-.header{
+.common-header{
 	height: 111px;
 	border-bottom: 5px solid @colorLightBlue;
 }
-.menu{
+.common-menu{
 	height: 95px;
 }
-.sublink{
+.common-sublink{
 	height: 27px;
 	line-height: 27px;
 	padding:0 8px;
@@ -25,4 +25,38 @@
 		font-weight: bold;
 	}
 }
+.common-twoAd{
+	height: 90px;
+	overflow: hidden;
+}
 //      - index -
+.index-textAd{
+	ul{
+		border: 1px solid @colorBorder;
+		background: @colorTitleBg;
+		margin: 0;
+		padding:10px;
+	}
+	li{
+		list-style: none;
+		float: left;
+		margin-right: 10px;
+	}
+}
+.index-footer{
+	background: #EDF2F8;
+	.line{
+		border-bottom: 1px solid #D0D7DF;
+		height: 1px;
+	}
+	h3{
+		font-size: 22px;
+		height: 50px;
+		line-height: 50px;
+		font-family: @fontYahei;
+		font-weight: normal;
+	}
+	.links{
+		line-height: 26px;
+	}
+}
