@@ -37,4 +37,45 @@
 		<li><a href="http://cmall.sdinfo.net/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=29">通讯交流</a></li>
 	</ul>
 </div>
+
+<div class="layout mt10">
+	<ul class="channel-mall-suggest clear">
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+		<li><a href="#"><img src="{$pr}images/imgChannelSuggest.jpg" alt=""><span>这里是商家名称</span></a></li>
+	</ul>
+</div>
+
+<div class="layout channel-list mt10">
+	<div class="list-left fl">
+		<div class="left-thumbs">
+			<div class="thumbs-focus">
+				<img src="{$pr}images/imgChannelListFocus.jpg" alt="#">
+			</div>
+		</div>
+		<div class="left-focus">
+
+		</div>
+	</div>
+	<div class="list-right fr">
+
+	</div>
+</div>
 {template 'footer', 'common'}
