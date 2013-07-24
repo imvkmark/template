@@ -23,3 +23,9 @@ function go(param, value, tripFile) {
 	}
 	window.location = urlGo;
 }
+
+$('#common_top_link').mouseover(function(){
+	$('#common_top_sublink').show();
+}).mouseout(function(){
+	$('#common_top_sublink').hide();
+});

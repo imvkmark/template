@@ -13,16 +13,19 @@ a {
 		color: @colorHover;
 	}
 }
-.cutter{
+.cutter {
 	padding: 0 5px;
 }
-.cutter-grey{
+.cutter-grey {
 	color: @colorCutter;
 }
-.cutter-blue{
+.cutter-black {
+	color: #000;
+}
+.cutter-blue {
 	color: @colorDarkBlue;
 }
-.cutter-lightblue{
+.cutter-lightblue {
 	color: @colorTitleBlueBorder;
 }
 // float
@@ -51,7 +54,10 @@ a {
 	width: 980px;
 	margin: 0 auto;
 }
-.mt10{
+.mt10 {
+	margin-top: 10px;
+}
+.mt5 {
 	margin-top: 10px;
 }
 // page
@@ -86,83 +92,181 @@ a {
 		background: #FFF;
 	}
 }
-
-.block-grey{
-	.head{
-		border:1px solid @colorBorder;
-		background:@colorTitleBg;
-		padding-left:19px;
+//div.block-grey>h3.head+div.body
+// 区块
+.block-grey {
+	.head {
+		margin: 0;
+		border: 1px solid @colorBorder;
+		background: @colorTitleBg;
+		padding-left: 19px;
 		font-weight: bold;
 		height: 28px;
 		line-height: 28px;
 		font-size: 14px;
 	}
-	.body{
-		border:1px solid @colorBorder;
+	.head-nopadding{
+		padding: 0;
+	}
+	.head-nobg{
+		background: #fff;
+	}
+	.title{
+		background: @colorLightBlue;
+		display: block;
+		float: left;
+		color: #fff;
+		padding: 0 10px;
+		a{
+			color: #fff;
+			&:hover{
+				color: @colorHover;
+			}
+		}
+	}
+	.body {
+		border: 1px solid @colorBorder;
 		border-top: none;
 	}
-	.body-common{
+	.body-common {
 		padding: 15px;
 	}
-	.body-narrow{
+	.body-narrow {
 		padding: 10px;
 	}
 }
-.block-title{
+// 首页分类大标题
+.block-title {
 	height: 35px;
 	line-height: 35px;
 	border-bottom: 2px solid @colorLightBlue;
-	.category{
+	.category {
 		font-size: 18px;
 		font-weight: bold;
 		background: @colorLightBlue;
 		font-family: @fontYahei;
 		float: left;
 		padding: 0 10px;
-		color: #fff;
+		color: #FFF;
 		margin: 0;
 	}
-	.suggest{
+	.suggest {
 		float: right;
+		color: @colorDarkBlue;
+		padding-right: 15px;
+		a{
+			color: @colorDarkBlue;
+			&:hover{
+				color: @colorHover;
+			}
+		}
 	}
 }
 // list
-.li-qing{
-	padding-left:12px;
+.li-qing {
+	padding-left: 12px;
 	background: url('../images/bgListQing.jpg') no-repeat 3px center;
-	a{
-		color:@colorQing;
-		&:hover{
-			color:@colorHover;
+	a {
+		color: @colorQing;
+		&:hover {
+			color: @colorHover;
 		}
 	}
 }
-.li-red{
-	padding-left:12px;
+.li-red {
+	padding-left: 12px;
 	background: url('../images/bgListRed.jpg') no-repeat 3px center;
-	a{
-		color:@colorRed;
-		&:hover{
-			color:@colorHover;
+	a {
+		color: @colorRed;
+		&:hover {
+			color: @colorHover;
 		}
 	}
 }
-.list-Qing{
-	li{
-		padding-left:12px;
-		background: url('../images/bgListQing.jpg') no-repeat 3px center;
+.list {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	li {
+		list-style: none;
+		height: 26px;
+		line-height: 26px;
+	}
+	.cat {
+		font-size: 12px;
+		a{
+			color: @colorGrey;
+			&:hover {
+				color: @colorLink;
+			}
+		}
 	}
 }
-.list-Red{
-	li{
-		padding-left:12px;
-		background: url('../images/bgListRed.jpg') no-repeat 3px center;
+.list-qingdot, .list-reddot, .list-greydot, .list-orangedot {
+	li {
+		padding-left: 12px;
 	}
 }
-
-.list-Grey{
+.list-qingdot li {
+	background: url('../images/bgListQing.jpg') no-repeat 3px center;
+}
+.list-reddot li {
+	background: url('../images/bgListRed.jpg') no-repeat 3px center;
+}
+.list-greydot li {
+	background: url('../images/bgListGrey.jpg') no-repeat 3px center;
+}
+.list-orangedot li {
+	background: url('../images/bgListOrange.jpg') no-repeat 3px center;
+}
+.list-3rdnum {
+	background: url('../images/bgListNum.jpg') no-repeat 0 -1px;
+	padding-left: 35px;
+	.time{
+		float: right;
+		color: @colorGrey;
+		padding-left: 15px;
+	}
 	li{
-		padding-left:12px;
-		background: url('../images/bgListGrey.jpg') no-repeat 3px center;
+		font-size: 12px;
+		line-height: 26px;
+		height: 26px;
+		overflow: hidden;
+	}
+}
+.list-narrow{
+	line-height: 24px;
+	font-size: 12px;
+	overflow: hidden;
+	li{
+		height: 24px;
+	}
+}
+.img {
+	font-size: 12px;
+	.item {
+		float: left;
+		a {
+			display: block;
+		}
+		.title, .link {
+			height: 22px;
+			line-height: 22px;
+			text-align: center;
+		}
+		.link{
+			display: block;
+		}
+	}
+	.item-nofloat{
+		a {
+			display: block;
+		}
+		.link{
+			display: block;
+		}
+	}
+	.item-bigsize{
+		font-size: 14px;
 	}
 }
