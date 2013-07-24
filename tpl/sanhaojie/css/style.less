@@ -399,3 +399,93 @@
 	}
 }
 
+.channel-top{
+	height: 75px;
+	border: none;
+	.channel-logo{
+		background: url('../images/logo.jpg') no-repeat;
+		width: 172px;
+		height: 50px;
+		display: block;
+		float: left;
+		line-height: 50px;
+		padding-right: 10px;
+	}
+	.cate{
+		display: block;
+		line-height: 50px;
+		float: left;
+		padding-left: 15px;
+		font-family: @fontYahei;
+		a{
+			color: @colorDarkBlue;
+			&:hover{
+				color:@colorHover;
+				border-bottom: 3px solid @colorDarkBlue;
+			}
+		}
+		border-left:1px solid #ccc;
+	}
+	.search-form{
+		margin-top: 19px;
+	}
+	.channel-toplink{
+		padding-top: 30px;
+		.toplink{
+			background: url(@bgSprite) 0 0 no-repeat;
+			width: 18px;
+			height: 18px;
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 5px;
+		}
+		a{
+			color: @colorDarkBlue;
+			&:hover{
+				color: @colorHover;
+			}
+		}
+		.item{
+			padding-right: 10px;
+		}
+		.toplink-mall{
+			background-position: -187px -313px;
+		}
+		.toplink-channel{
+			background-position: -250px -313px;
+		}
+		.toplink-bbs{
+			background-position: -314px -313px;
+		}
+	}
+}
+
+.chanel-nav{
+	background: #3CA3DD;
+	height: 36px;
+	line-height: 36px;
+	font-family: @fontYahei;
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		width: 85px;
+		float: left;
+		list-style: none;
+		text-align: center;
+		a{
+			color: #fff;
+			font-weight: bold;
+			font-size: 16px;
+			&:hover{
+				color: @colorHover;
+			}
+		}
+	}
+	.line{
+		width: 3px;
+		background: url("../images/bgChannelNavLine.jpg") 1px 1px no-repeat;
+		height: 36px;
+	}
+}
