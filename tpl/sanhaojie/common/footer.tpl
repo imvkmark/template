@@ -1,4 +1,4 @@
-<div class="index-footer mt10">
+<div class="common-footer mt10">
 	<div class="line"></div>
 	<div class="layout content">
 		<h3>合作伙伴</h3>
