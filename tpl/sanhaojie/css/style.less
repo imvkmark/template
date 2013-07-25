@@ -522,8 +522,229 @@
 				border:1px solid #ccc;
 			}
 		}
+		.left-focus{
+			width: 330px;
+			.focus-big{
+				font-size: 18px;
+				font-weight: bold;
+				color: @colorRed;
+				&:hover{
+					color: @colorHover;
+				}
+				line-height: 44px;
+				overflow: hidden;
+				text-align: center;
+				display: block;
+				font-family: @fontYahei;
+			}
+			ul{
+				margin: 0;
+				font-size: 14px;
+				line-height: 26px;
+				overflow: hidden;
+				padding: 4px 0;
+			}
+			li{
+				list-style: none;
+				float: left;
+				width: 152px;
+				padding-right: 8px;
+			}
+		}
 	}
 	.list-right{
 		width: 240px;
+		.suggest-item{
+			padding: 10px 23px;
+		}
+		img{
+			border: 1px solid #ccc;
+		}
+		.pro-title{
+			line-height: 26px;
+			font-size: 14px;
+			text-align: center;
+			display: block;
+		}
+		p{
+			line-height: 28px;
+			margin: 0;
+		}
+		.price{
+			color: @colorRed;
+			font-weight: bold;
+			font-family: @fontYahei;
+		}
+		.pro-buy{
+			background: url(@bgSprite);
+			background-position: -187px -265px;
+			display: inline-block;
+			width: 66px;
+			height: 21px;
+			vertical-align: middle;
+			margin-left: 10px;
+		}
 	}
+	.list-article{
+		.article-cat-top{
+			padding: none;
+			margin: 0;
+			padding: 0;
+			line-height: 26px;
+			font-size: 14px;
+			list-style: none;
+			border-left:1px solid #ccc;
+			border-right:1px solid #ccc;
+			height: 28px;
+			overflow: hidden;
+			background: #3BA3DA;
+			li{
+				float: left;
+				height: 28px;
+				width: 103px;
+				background:#3BA3DA ;
+				text-align: center;
+				a{
+					color: #fff;
+					&:hover{
+						color: @colorHover;
+					}
+				}
+			}
+			.active{
+				height: 26px;
+				border-top:2px solid #E3228B;
+				background: #fff;
+				a{
+					color: #000;
+					&:hover{
+						color: @colorHover;
+					}
+				}
+			}
+			.line{
+				width: 1px;
+				height: 28px;
+				background: url("../images/bgChannelNavLine.jpg") -1px 0px no-repeat;
+			}
+		}
+	}
+	.article-item{
+		h3{
+			font-family: @fontYahei;
+			height: 25px;
+			line-height: 25px;
+			padding: 14px 0;
+			margin: 0 15px;
+			border-bottom:1px dotted #ccc;
+		}
+		.item-cat{
+			float: left;
+			color: #fff;
+			background: #E3228B;
+			padding: 0 4px;
+			display: inline;
+			a{
+				color: #fff;
+				&:hover{
+					color:@colorGrey;
+				}
+			}
+		}
+		.item-title{
+			padding-left: 15px;
+			color: @colorHover;
+			&:hover{
+				color: @colorGrey;
+			}
+		}
+		.item-comment{
+			font-weight: normal;
+			font-size: 12px;
+			padding-right: 10px;
+			font-family: @fontSong;
+			em{
+				color: @colorLightBlue;
+				a{
+					color: @colorLightBlue;
+				}
+			}
+		}
+		.item-pubinfo{
+			padding: 0 15px;
+			a{
+				color: @colorLightBlue;
+				&:hover{
+					color: @colorGrey;
+				}
+			}
+		}
+		.item-intro{
+			padding: 0 15px;
+			font-size: 14px;
+			font-family: @fontSong;
+			line-height: 24px;
+		}
+		.item-img{
+			border:1px solid #ccc;
+			padding: 10px;
+			display: block;
+			margin-right: 14px;
+		}
+		.item-comResult{
+			margin: 1em 0;
+			background: #F6F6F6;
+			line-height: 30px;
+		}
+		.item-abc{
+			width: 250px;
+			background: url("http://www.www.cc/template/tpl/sanhaojie/css/../images/sprite.fw.png") no-repeat 66px -650px;
+		}
+		.item-start,.item-a, .item-b, .item-c{
+			display: block;
+			float: left;
+			width: 27px;
+			padding-left:20px;
+		}
+		.item-start{
+			width: 60px;
+		}
+		.item-share{
+			padding-right: 10px;
+		}
+		.item-more{
+			color: @colorLightBlue;
+			&:hover{
+				color: @colorGrey;
+			}
+		}
+	}
+	.list-pages{
+		text-align: center;
+	}
+	.list-right{
+		.right-special{
+			font-size: 12px;
+			text-align: center;
+			padding: 10px;
+			a{
+				line-height: 25px;
+				display: block;
+				text-align: center;
+			}
+			.special-item{
+				padding-top: 15px;
+				padding-bottom: 10px;
+				border-bottom: 1px dotted #ccc;
+			}
+		}
+		.hot-comment {
+			font-size: 12px;
+		}
+		.right-adplace{
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+	}
+
 }
