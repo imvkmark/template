@@ -465,6 +465,7 @@
 	height: 36px;
 	line-height: 36px;
 	font-family: @fontYahei;
+	overflow: hidden;
 	ul{
 		margin: 0;
 		padding: 0;
@@ -628,6 +629,14 @@
 				background: url("../images/bgChannelNavLine.jpg") -1px 0px no-repeat;
 			}
 		}
+		.article-bigcat{
+			color: #E6208F;
+			border: 1px solid #ccc;
+			border-top: 2px solid #E6208F;
+			line-height: 25px;
+			padding-left: 25px;
+			margin: 0;
+		}
 	}
 	.article-item{
 		h3{
@@ -746,5 +755,130 @@
 			padding: 10px;
 		}
 	}
+}
+.page-single{
+	line-height: 48px;
+	.page-position{
+		padding-left:15px;
+	}
+	.page-gomall{
+		background: url(@bgSprite) -6px -693px no-repeat;
+		padding-left: 36px;
+	}
+}
+.page-main{
+	.main-show{
+		width: 670px;
+		.show-content{
+			border: 1px solid #CAD5EB;
+			padding:37px;
+			h3{
+				color: #000;
+				text-align: center;
+				font-weight: bold;
+				font-family: @fontYahei;
+				font-size: 24px;
+				border-bottom: #E7EBEE 1px solid;
+				padding: 15px 0;
+			}
+			.content-info{
+				font-size: 12px;
+				color: #666;
+				text-align: center;
+				margin-left: 0;
+				a{
+					color: @colorLightBlue;;
+					&:hover{
+						color:@colorLink;
+					}
+				}
+				.em{
+					color: @colorRed;
+				}
+			}
+			.content-ext{
+				text-align: center;
+			}
+			.ext-all, .ext-mall, .ext-comment{
+				background: url(@bgSprite);
+				display: inline-block;
+				padding-right: 3px;
+			}
+			.ext-all{
+				width: 77px;
+				height: 21px;
+				background-position: -6px -744px;
+			}
+			.ext-mall{
+				width: 103px;
+				height: 21px;
+				background-position: -86px -744px;
+			}
+			.ext-comment{
+				width: 106px;
+				height: 21px;
+				background-position: -192px -744px;
+			}
+			.content-inner{
+				padding:10px 0;
+			}
 
+			.content-subtitle{
+				h3{
+					font-size: 14px;
+					line-height: 25px;
+					padding: 0 0 0 20px;
+					text-align: left;
+				}
+				ul{
+					font-size: 12px;
+				}
+				li{
+					float: left;
+					width: 275px;
+					padding-left: 10px;
+				}
+			}
+		}
+		.show-comment{
+			border: 1px solid #CAD5EB;
+		}
+	}
+	.main-right{
+		width: 300px;
+		.special-item{
+			a{
+				text-align: center;
+				display: block;
+				line-height: 30px;
+			}
+			padding-top: 10px;
+			border-bottom:1px #ccc dotted;
+		}
+		.special-item-noborder{
+			border-bottom: none;
+		}
+		.high-imgs{
+			img{
+				width: 120px;
+			}
+			.imgs-item{
+				margin-left:13px;
+				padding-top: 8px;
+				line-height: 20px;
+				text-align: center;
+			}
+		}
+		.comment-intro{
+			line-height: 25px;
+			border-bottom: 1px #ccc dotted;
+			margin-bottom: 8px;
+			span{
+				width: 70px;
+				display: block;
+				float: left;
+				padding-left:15px;
+			}
+		}
+	}
 }
