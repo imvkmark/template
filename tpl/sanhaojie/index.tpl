@@ -29,13 +29,13 @@
 						<a href="{$pr}images/imgFocusLeftImg.jpg">
 							<img src="{$pr}images/imgFocusLeftImg.jpg" alt="">
 						</a>
-						<a class="title" href="">这里是死命的标题</a>
+						<a class="link" href="">这里是死命的标题</a>
 					</div>
 					<div class="item">
 						<a href="">
 							<img src="{$pr}images/imgFocusLeftImg.jpg" alt="">
 						</a>
-						<a class="title" href="">这里是死命的标题</a>
+						<a class="link" href="">这里是死命的标题</a>
 					</div>
 				</div>
 			</div>

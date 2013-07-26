@@ -1,3 +1,4 @@
+.resetBrowser();
 // common
 body {
 	background: url(../images/bgBody.jpg) repeat-x 0 0;
@@ -15,6 +16,7 @@ a {
 }
 .cutter {
 	padding: 0 5px;
+	line-height: 1;
 }
 .cutter-grey {
 	color: @colorCutter;
@@ -189,6 +191,9 @@ a {
 		list-style: none;
 		height: 26px;
 		line-height: 26px;
+		a{
+			zoom:1;
+		}
 	}
 	.cat {
 		font-size: 12px;

@@ -1,5 +1,5 @@
 <div class="layout common-header channel-top clear">
-	<div class="fl">
+	<div class="fl channel-logo-w">
 		<h1 class="logo"><a href="#" class="channel-logo"></a><span class="cate"><a href="">影像数码</a></span></h1>
 	</div>
 	<div class="fr">
